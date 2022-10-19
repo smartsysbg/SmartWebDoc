@@ -1,0 +1,46 @@
+site_name: SmartWEB 1.0
+nav:
+  - Home: index.md
+  - Architectural Considerations: architectural-considerations.md
+  - Getting Started: getting-started.md
+  - Admin Interface Overview: admin-interface-overview.md
+  - Content Anatomy: content-anatomy.md
+  - Manage Content: manage-content.md
+  - Modules: modules.md
+  - Themes: themes.md
+  - Users and Roles: users-and-roles.md
+  - Widgets: widgets.md
+  - Content Classification: content-classification.md
+  - Navigation and Menus: navigation-and-menus.md
+  - Access to OPC Data: access-to-opc-data.md
+  - Access to Relational Data: access-to-relational-data.md
+  - Manage Files and Media: manage-files-and-media.md
+  - PHD Reports: phd-reports.md
+  - Object Store: object-store.md
+  - Tag Synchronization: tag-synchronization.md
+  - Workflows: workflows.md
+  - Custom Content in-depth: custom-content-in-depth.md
+  - HMI Editor Mastering: hmi-editor-mastering.md
+  - Dynamic Shapes Development: dynamic-shapes-development.md
+  - HMIWeb to Svg: hmiweb-to-svg.md
+  - Dygraph Trend: dygraph-trend.md
+  - OData Query Builder: odata-query-builder.md
+  - OData Table: odata-table.md
+  - Video Surveillance: video-surveillance.md
+  - NVD3 Charting: nvd3-charting.md
+  - System Components: system-components.md
+  - Custom Views: custom-views.md
+  - Import and Export: import-and-export.md
+  - Site Settings: site-settings.md
+  - Performance Tuning: performance-tuning.md
+  - Backup and Recovery: backup-and-recovery.md
+  - Security Considerations: security-considerations.md
+  
+theme: 
+    name: readthedocs
+
+markdown_extensions:
+  - admonition
+  - toc: 
+      toc_depth: 3
+  - attr_list
