@@ -9,7 +9,7 @@ interoperability with any installed based control system, SmartWEB acts as a sin
 SmartWEB and all its services are designed to operate with security as  core consideration. Along with the flexible architecture, the system enables enterprises for Industry 4.0 and digital transformation.
 
 ## Acknowledgments
-Our team every day uses high-quality software that is developed and maintained by people who respect freedom and who are generous with their time and energy. We sincerely thank the teams and individuals who develop the following open-source products.
+Our team every day uses high-quality software that is developed and maintained by people who respect freedom and who are generous with their time and energy. We sincerely thank the teams and individuals who develop the following open-source products. test
 
 #### Orchard CMS
 Orchard is a free, open-source, community-focused Content Management System built on the ASP.NET MVC platform. Orchard is built on a modern architecture that puts extensibility up-front, as its number one concern. All components in Orchard can be replaced or extended. Content is built from easily composable building blocks. Modules extend the system in a very decoupled fashion. A rich UI composition system completes the picture. Orchard is delivered under the .NET Foundation and licensed under a `New BSD license`, which is approved by the OSI.
