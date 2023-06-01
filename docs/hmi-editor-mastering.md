@@ -1,9 +1,9 @@
 #
-**SmartWEB** offers a built-in WEB-based graphics editor for creating and editing `SVG` vector graphics. These graphics are part of WEB pages. Using the data provided by the `Opc Xml Data Providers`, the vector graphics can be animated. This feature enables the design of an `HMI` (Human Machine Interface) that has the same appearance and functionality as the HMI used in operator stations in the control room. This chapter describes how to create and manage graphical displays, thereby achieving a dynamic visual representation of the process. Components from the SmartWEB dynamic shape library are used to represent common HMI elements such as valves, motors, regulators, etc. The following picture is an example of a data-driven WEB HMI graphic page.
+**SmartWEB** offers a built-in WEB-based graphics editor for creating and editing `SVG` vector graphics. These graphics are part of WEB pages. Using the data provided by the `Opc Xml Data Providers`, the vector graphics can be animated. This feature enables the design of an `HMI` (Human Machine Interface) that has the same appearance and functionality as the `HMI` used in operator stations in the control room. This chapter describes how to create and manage graphical displays, thereby achieving a dynamic visual representation of the process. Components from the SmartWEB dynamic shape library are used to represent common `HMI` elements such as valves, motors, regulators, etc. The following picture is an example of a data-driven `WEB-HMI` graphic page.
 
 ![](./media/hmi-editor-mastering/image0.png)
 
-The graphical editor is also used for the development of dynamic elements (shapes). The system comes equipped with pre-built shapes that are ready to use, but you can also create new, custom shapes that meet specific project requirements and extend the built-in library. The [Dynamic Shapes Development](/dynamic-shapes-development) chapter describes how to create custom shapes.
+The graphical editor is also used for the development of dynamic elements (`Shapes`). The system comes equipped with pre-built shapes that are ready to use, but you can also create new, custom shapes that meet specific project requirements and extend the built-in library. The [Dynamic Shapes Development](/dynamic-shapes-development) chapter describes how to create custom shapes.
 
 ---
 
