@@ -1,6 +1,8 @@
 #
 **SmartWeb** offers a built-in WEB-based graphical editor for creating and editing `SVG` vector graphics. With the help of the data provided by `Opc Xml Data Providers`, vector graphics can be animated, thus presenting the data-driven graphics on web pages. This feature allows for a Web HMI (Human Machine Interface) design that has the same appearance and functionality as the HMI used in control room operator stations. This chapter describes how to create and manage your graphical displays and create a dynamic visual presentation of process data by utilizing the shape library. The next picture is an example of a data-driven WEB graphical page.
 
+**SmartWeb** offers a built-in WEB-based graphics editor for creating and editing `SVG` vector graphics. These graphics are part of WEB pages. Using the data provided by the `Opc Xml Data Providers`, the vector graphics can be animated. This feature enables the design of an `HMI` (Human Machine Interface) that has the same appearance and functionality as the HMI used in operator stations in the control room. This chapter describes how to create and manage graphical displays, thereby achieving a dynamic visual representation of the process. Components from the SmartWEB dynamic element library are used to represent common HMI components such as valves, motors, regulators, etc. The following picture is an example of a data-driven HMI WEB graphic page.
+
 ![](./media/hmi-editor-mastering/image0.png)
 
 The graphical editor is also used for the development of dynamic elements (shapes). The system comes equipped with pre-built shapes that are ready to use, but you can also create new, custom shapes that meet specific project requirements and extend the built-in library. The [Dynamic Shapes Development](/dynamic-shapes-development) chapter describes how to create custom shapes.
@@ -146,11 +148,11 @@ smallest object, page).
 
 ## Data Presentation
 
-The following example presents a dynamic WEB page that was created with the use of the SVG-Editor.
+The next screenshot presents a dynamic WEB page that was created with the use of the SVG-Editor.
 
 ![](./media/hmi-editor-mastering/image12.1.png)
 
-The following, brief, overview explains how the dynamic elements of a page function.  The image below presents a block diagram that shows the interaction between the elements that drive the dynamics of the WEB page.
+The following block diagram shows the interaction between the components that create the dynamics inside the SVG content in a WEB page.
 
 ![](./media/hmi-editor-mastering/image13.png)
 
