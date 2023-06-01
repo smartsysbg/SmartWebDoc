@@ -2,7 +2,7 @@
 ## About
 In today's process industries, smarter decision-making enabled by greater insight into operations and enterprise collaboration is crucial. SmartWEB allows users to visualize and explore all process data, alarms, and events at anytime and anywhere in the same way as seen on operator stations. By using built-in reach computing capabilities and 
 visualization libraries, the users can create and share with co-workers KPI dashboards, production reports and many more. It's a highly scalable infrastructure designed with cybersecurity in mind, which empowers enterprises in real-time and transforms operational data into actionable knowledge. By utilizing state-of-the-art technologies for
-interoperability with any installed based control system, SmartWEB acts as a single data hub between the factory floor and decision-makers. 
+interoperability with any installed based control system, SmartWEB acts as a single data hub between the factory floor and decision-makers. ddd-bbb
 
 ![](./media/index/image1.png)
 
