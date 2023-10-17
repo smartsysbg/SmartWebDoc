@@ -1,9 +1,11 @@
 site_name: SmartWEB 1.0
 nav:
   - Home: index.md
-  - Architectural Considerations: architectural-considerations.md
   - Getting Started: getting-started.md
   - Admin Interface Overview: admin-interface-overview.md
+  - Architectural Considerations: architectural-considerations.md
+  - Multitenancy: multitenancy.md
+  - Load Balancing: load-balancing.md
   - Content Anatomy: content-anatomy.md
   - Manage Content: manage-content.md
   - Modules: modules.md
