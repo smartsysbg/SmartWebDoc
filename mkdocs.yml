@@ -2,10 +2,8 @@ site_name: SmartWEB 1.0
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
-  - Admin Interface Overview: admin-interface-overview.md
   - Architectural Considerations: architectural-considerations.md
-  - Multitenancy: multitenancy.md
-  - Load Balancing: load-balancing.md
+  - Admin Interface Overview: admin-interface-overview.md
   - Content Anatomy: content-anatomy.md
   - Manage Content: manage-content.md
   - Modules: modules.md
@@ -33,6 +31,8 @@ nav:
   - System Components: system-components.md
   - Custom Views: custom-views.md
   - Import and Export: import-and-export.md
+  - Multitenancy: multitenancy.md
+  - Load Balancing: load-balancing.md
   - Site Settings: site-settings.md
   - Performance Tuning: performance-tuning.md
   - Backup and Recovery: backup-and-recovery.md

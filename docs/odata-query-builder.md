@@ -1,4 +1,5 @@
 #
+
 This chapter describes how to create WEB pages with **SmartWEB** built-in functionality for the [OData](https://www.odata.org/) queries. The `Smartsys OData Query Builder` module provides a `Content Part`, with the same name that may be attached to every `Content Type`. This provides a user interface for building `OData` queries without the need for prior knowledge of [OData's syntax and rules](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
 ![](./media/odata-query-builder/image0.png)
