@@ -5,7 +5,7 @@
 ---
 
 ## Overview
-The **Content Anatomy** of SmartWeb consists of the following components:  
+The content anatomy of **SmartWEB** consists of the following components:  
 
 > - `Content Types` - Defines metadata and behaviors for building specific content.  
 > - `Content Items` - A single piece of content derived from a **Content Type**.  
