@@ -13,10 +13,11 @@ The following diagram illustrates how the two `Multitenancy` and `Load Balancing
 As mentioned earlier, using both modes together is the typical case, so we will discuss it in this chapter. If you want to use `Load Balancing` without `Multitenancy`, it is like having multiple **SmartWEB** applications on multiple server platforms that only work with the `Default Tenant`.  
 
 The overall system in `Load Balancing` mode consists of the following components:  
-> -  Two or more **SmartWEB** Application Servers 
+> -  Two or more **SmartWEB** Application servers 
 > -  Database server
 > -  Redis Cache server
 > -  Load Balancer server
+> -  External Data Sources (Not the subject of this chapter)
 
 The `Database` server, `Redis Cache` server and `Load Balancer` server must be on different machines from those used for the **SmartWEB** applications. They can be deployed on a single server or on separate servers and can also be part of a cloud services ecosystem. In other modes, `Redis Cache` is used to cache content and other commonly used components and is not a required component. In `Load Balancing` mode, `Redis Cache` is a required component. Using `Redis Cache`, the tenant instances of all **SmartWEB** application servers exchange messages with each other using the `Pub/Sub` services provided by `Redis Cache`.  
 
