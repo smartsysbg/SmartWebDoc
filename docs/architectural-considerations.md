@@ -27,7 +27,7 @@ We recommend using the first option as the database is better structured and eas
 In `Multitenancy` mode, the base tenant `URL` is formed by adding `tepant-id` as an additional segment to the base `URL` of the **SmartWEB** application. There is no limit to the number of tenants running on the **SmartWEB** application server. It depends on the performance of the hosting server and the load of the tenants.    
 
 
-!!!tip "Note" 
+!!!note "Note" 
     In `Multitenancy` mode, the tenant that is accessed with the base application `URL` is called the `Default` tenant. No user content is normally created or users configured in this tenant. It is only used to manage the other tenants and only the `Super User` has access to it.  
 
 This architecture also provides upgrade convenience, as all sites use the same `binary code`. The downside is that when an application server is taken down for an upgrade or other maintenance, all sites hosted as tenants on a particular application server are taken down. The architecture is suitable for hosting multiple non-critical cloud-based applications because it optimises the resources used, resulting in reduced costs. A detailed description of the configuration and management when running **SmartWEB** in this architecture can be found in the [Multitenancy](/multitenancy) chapter.  
