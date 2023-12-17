@@ -17,7 +17,7 @@ As discussed in the [Architectural Considerations](/architectural-considerations
 
 We recommend using the first option, because the database in this case is better structured and easier to manage in this case. Further in this chapter will consider this way of configuring multitenancy mode. As shown in the architecture above, addressing the tenants is done by adding the `tenant-id` as an additional segment to the base `URL` of the **SmartWEB** application. Addresses without this additional segment are addressed to the `Default Tenant`. The `Default Tenant` is the tenant that is used to manage the other tenants. Later in this chapter we will explain how this mechanism works.  
 
-!!!attention "Imortant"
+!!!attention "Default Tenant Best Practice"
     The `Default Tenant` is like any other tenant and can be used as a regular **SmartWEB** site. However, best practice is to not create users or build content in the `Default Tenant` and use it only to manage the other tenants.  
 
 ---
@@ -28,7 +28,7 @@ To illustrate multitenancy configuration, we will use a `PostgreSQL` server and 
 
 ![](./media/multitenancy/pg-databases-and-users.png)
 
-!!!attention "Imortant"
+!!!attention "Database User Privileges"
     When creating the users make sure that the `Can login?` property from the user `Privileges` tab is enabled.  
 
 We now have three databases and three users who own each database. We also need to check that `PostgreSQL` server allows connections from `external IP addresses`. To do this, locate the `postgresql.conf` file in the `data` folder of the `PostgreSQL` server. Open the file and look for the `listen_addresses` parameter. With this parameter you can specify a list of IP addresses that can connect to the server or you can allow all IP addresses with the value `*`.  
@@ -48,8 +48,12 @@ host        all         all         0.0.0.0/32          scram-sha-256
 
 After modifying the configuration files, the `PostgreSQL` server must be restarted for the new configuration parameters to take effect.  
 
-!!!note "Note"  
-    If `Windows Firewall` is enabled on the server, you should also check if there are access rules configured for the `PostgreSQL` server and the `Redis Cache` server if it is also installed on the same machine. The defautl port for the `PostgreSQL` server is `TCP/5432` and the defautl port for the `Redis Cache` server is `TCP/6379`.  
+!!!note "Database Considerations"  
+    All databases do not need to reside on a single `Database Management Server`. They can be distributed across different servers.  
+
+!!!attention "Firewall Configuration"
+    If `Windows Firewall` is enabled on the server, you should also check if there are access rules configured for the `PostgreSQL` server and the `Redis Cache` server if it is also installed on the same machine. The defautl port for the `PostgreSQL` server is `TCP/5432` and the defautl port for the `Redis Cache` server is `TCP/6379`. The ports that both servers listen on are configured with the `port` parameter in their configuration files.
+
 
 ---
 
@@ -74,7 +78,7 @@ Persist Security Info=true; Keepalive=15; Timeout=30; Command Timeout=90
 
 Click on the `Finish Setup` button and the selected **SmartWEB** recipe will be cooked. If you now look into the database using the `pgAdmin` tool you will see that the `Default Tenant` database is no longer empty. Also in the `App_Data` folder we now have a `Sites` folder and within that folder is a `Default` folder which contains service information for the `Default Tenant`.  
 
-!!!error "Error Handling" 
+!!!error "Installation Errors Handling" 
     If **errors** occur and you are unable to cook the recipe, you should go to the `inetpub>SmartWeb>App_Data>Logs` folder and investigate the reasons for the failure using the error records in the log files.  
 
 Now that we have successfully cooked the recipe, we can move on to creating `Application Tenants` which you can use to create **SmartWEB** sites with users and content.
@@ -89,7 +93,7 @@ First you need to check if the `Multi Tenancy` module is enabled. You can do thi
 
 If the `Multi Tenancy` module is not enabled, you  will need to enable it by clicking on the `Enable` link on the right hand side of the module box. For more information on managing modules, refer to the [Modules](/modules) chapter.  
 
-!!!note "Note"  
+!!!note "Multitenancy Management Module"  
     Module `Multi Тenancy` can be enabled or disabled after the recipe has been executed. This depends on how the recipe itself is designed. There are recipes that enable the module and others that do not. In the previous section, we selected a `Smart Web Light` recipe and that recipe does not automatically enable the `Multi Тenancy` module, so we need to enable it manually. In the [Load Balancing](/load-balancing) chapter, we will look at other recipes that automatically enable the `Multi Тenancy` module.  
 
 After activating the `Multi Тenancy` module, a `Tenants` link will appear in the `Admin Panel Tree`. This link opens the `Tenant Management` page. Until you create your own `Application Tenants` you will only see the `Default Tenant` there. Adding a new tenant is done via the `Add a Tenant` button as shown in the image below.  
