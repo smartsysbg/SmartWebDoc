@@ -24,7 +24,7 @@ We recommend using the first option as the database is better structured and eas
 
 ![](./media/architectural-considerations/multitenancy.png)
 
-In `Multitenancy` mode, the base tenant `URL` is formed by adding `tepant-id` as an additional segment to the base `URL` of the **SmartWEB** application. There is no limit to the number of tenants running on the **SmartWEB** application server. It depends on the performance of the hosting server and the load of the tenants.    
+In `Multitenancy` mode, the base tenant `URL` is formed by adding `url-prefix` as an additional segment to the base `URL` of the **SmartWEB** application. There is no limit to the number of tenants running on the **SmartWEB** application server. It depends on the performance of the hosting server and the load of the tenants.    
 
 
 !!!note "Note" 
