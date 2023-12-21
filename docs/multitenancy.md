@@ -1,6 +1,6 @@
 #
 
-The [Architectural Considerations](/architectural-considerations) chapter describes what multitenancy is. In this chapter, we will describe how to configure **SmartWEB** to operate in `Multitenancy Mode` and also show how to manage individual tenants. We will consider the case where the **SmartWEB** application and the database are hosted on different servers. This is a typical case for production systems and also for cloud based systems where `Database` and `Redis Cache` server are used as external services provided by third parties.  
+The [Architectural Considerations](../architectural-considerations) chapter describes what multitenancy is. In this chapter, we will describe how to configure **SmartWEB** to operate in `Multitenancy Mode` and also show how to manage individual tenants. We will consider the case where the **SmartWEB** application and the database are hosted on different servers. This is a typical case for production systems and also for cloud based systems where `Database` and `Redis Cache` server are used as external services provided by third parties.  
 
 ---
 
@@ -10,7 +10,7 @@ The following figure illustrates the multitenancy architecture.
 
 ![](./media/multitenancy/multitenancy-architecture.png)
 
-As discussed in the [Architectural Considerations](/architectural-considerations) chapter, there are two ways to isolate the data of each tenant.  
+As discussed in the [Architectural Considerations](../architectural-considerations) chapter, there are two ways to isolate the data of each tenant.  
 
 > -  A separate database is created for each tenant.  
 > -  A separate set of tables is created for each tenant with the tenant name as a prefix to the original table name, but all tables for all tenants are stored in a single database.  
@@ -59,7 +59,7 @@ After modifying the configuration files, the `PostgreSQL` server must be restart
 
 ## Creating a Default Tenant  
 
-Once we have prepared the databases for the each tenant, we can move on to configuring the tenants themselves. We will do this on the server where the **SmartWEB** application is installed. We will not cover the installation of the **SmartWEB** application in this chapter as this is covered in the [Getting Started](/getting-started) chapter. In order for **SmartWEB** to initialise and connect to the newly created database, we will go into the **SmartWEB** installation directory, navigate to the `App_Data` folder, and delete the `Sites` folder from there. Now we will create the `Default Tenant` which will be used to create and manage the other tenants. You can browse to `http://localhost` and you will see the following screen.  
+Once we have prepared the databases for the each tenant, we can move on to configuring the tenants themselves. We will do this on the server where the **SmartWEB** application is installed. We will not cover the installation of the **SmartWEB** application in this chapter as this is covered in the [Getting Started](../getting-started) chapter. In order for **SmartWEB** to initialise and connect to the newly created database, we will go into the **SmartWEB** installation directory, navigate to the `App_Data` folder, and delete the `Sites` folder from there. Now we will create the `Default Tenant` which will be used to create and manage the other tenants. You can browse to `http://localhost` and you will see the following screen.  
 
 ![](./media/multitenancy/default-tenant-initial-setup.png)
 
@@ -91,10 +91,10 @@ First you need to check if the `Multi Tenancy` module is enabled. You can do thi
 
 ![](./media/multitenancy/modules-management-page.png)
 
-If the `Multi Tenancy` module is not enabled, you  will need to enable it by clicking on the `Enable` link on the right hand side of the module box. For more information on managing modules, refer to the [Modules](/modules) chapter.  
+If the `Multi Tenancy` module is not enabled, you  will need to enable it by clicking on the `Enable` link on the right hand side of the module box. For more information on managing modules, refer to the [Modules](../modules) chapter.  
 
 !!!note "Multitenancy Management Module"  
-    Module `Multi Тenancy` can be enabled or disabled after the recipe has been executed. This depends on how the recipe itself is designed. There are recipes that enable the module and others that do not. In the previous section, we selected a `Smart Web Light` recipe and that recipe does not automatically enable the `Multi Тenancy` module, so we need to enable it manually. In the [Load Balancing](/load-balancing) chapter, we will look at other recipes that automatically enable the `Multi Тenancy` module.  
+    Module `Multi Тenancy` can be enabled or disabled after the recipe has been executed. This depends on how the recipe itself is designed. There are recipes that enable the module and others that do not. In the previous section, we selected a `Smart Web Light` recipe and that recipe does not automatically enable the `Multi Тenancy` module, so we need to enable it manually. In the [Load Balancing](../load-balancing) chapter, we will look at other recipes that automatically enable the `Multi Тenancy` module.  
 
 After activating the `Multi Тenancy` module, a `Tenants` link will appear in the `Admin Panel Tree`. This link opens the `Tenant Management` page. Until you create your own `Application Tenants` you will only see the `Default Tenant` there. Adding a new tenant is done via the `Add a Tenant` button as shown in the image below.  
 
@@ -132,4 +132,4 @@ To delete a tenant, you must do the following:
 
 #### Summary
 
-In this chapter we learned how to configure **SmartWEB** to run in `Multitenancy Mode`. The different modes of operation are discussed in the [Architectural Considerations](/architectural-considerations) chapter. The [Load Balancing](/load-balancing) chapter describes the configuration and management when the system is working with `Load Balancer` at the front. The two modes of operation `Multitency` and `Load Balancing` complement each other and optimize the server resources used and at the same time provide a good level of redundancy.  
+In this chapter we learned how to configure **SmartWEB** to run in `Multitenancy Mode`. The different modes of operation are discussed in the [Architectural Considerations](../architectural-considerations) chapter. The [Load Balancing](../load-balancing) chapter describes the configuration and management when the system is working with `Load Balancer` at the front. The two modes of operation `Multitency` and `Load Balancing` complement each other and optimize the server resources used and at the same time provide a good level of redundancy.  

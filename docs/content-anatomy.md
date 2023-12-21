@@ -90,4 +90,4 @@ Clicking `Add Field` will open a form for creating a new field for the template.
 ---
 
 #### Summary 
-In this chapter, we have learned about the basic building blocks of the content. To fully understand the whole process of designing and creating front-end webpages, read the chapters [Manage Content](/manage-content) and [Widgets](/widgets). The [Navigation and Menus](/navigation-and-menus) chapter explains how to create site navigation and improve user experience.  
+In this chapter, we have learned about the basic building blocks of the content. To fully understand the whole process of designing and creating front-end webpages, read the chapters [Manage Content](../manage-content) and [Widgets](../widgets). The [Navigation and Menus](../navigation-and-menus) chapter explains how to create site navigation and improve user experience.  

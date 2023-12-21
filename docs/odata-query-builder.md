@@ -14,7 +14,7 @@ Query Builder, in the context of the `Content Types` configuration, gives an opt
 
 
 !!!note "Note"
-    Note that besides the `Smartsys OData Query Builder`, there are two other essential content parts configured in this content type - `Smartsys OData Providers` and `Smartsys OData Table`. Their role is to provide OData endpoints and skin for data presentation. For more details, see chapters [Access to Relational Data](/access-to-relational-data) and [OData Table](/odata-table). General knowledge about `Content Type` concepts is available in chapter [Content Anatomy](/content-anatomy/#content-type).
+    Note that besides the `Smartsys OData Query Builder`, there are two other essential content parts configured in this content type - `Smartsys OData Providers` and `Smartsys OData Table`. Their role is to provide OData endpoints and skin for data presentation. For more details, see chapters [Access to Relational Data](../access-to-relational-data) and [OData Table](../odata-table). General knowledge about `Content Type` concepts is available in chapter [Content Anatomy](../content-anatomy/#content-type).
 
 ---
 
@@ -145,10 +145,10 @@ The following image shows `OData` query configuration that complies with the tas
 ![](./media/odata-query-builder/image14.png)
 
 !!!note "Note"
-    It's good practice to add a column included in the `entity index` in the search criteria when dealing with large databases. This can improve endpoint performance. In the example above - `TaskKey` is included in the index of `EpksProcessAlarm` entity. The [Access to Relational Data](/access-to-relational-data) chapter explains `TaskKeys`.
+    It's good practice to add a column included in the `entity index` in the search criteria when dealing with large databases. This can improve endpoint performance. In the example above - `TaskKey` is included in the index of `EpksProcessAlarm` entity. The [Access to Relational Data](../access-to-relational-data) chapter explains `TaskKeys`.
 
 ---
 
 #### Summary
 
-In this chapter, we have learned how to configure the `OData Query Builder` in the contexts of `Content Types` and `Content Items`. To gain a complete understanding of the entire process of setting up endpoints and rendering the results to the front-end, read the chapters [Access to Relational Data](/access-to-relational-data) and [OData Table](/odata-table). The [Content Anatomy](/content-anatomy/#content-item) chapter contains a more detailed view of `Content Item` and `Content Type` concepts.
+In this chapter, we have learned how to configure the `OData Query Builder` in the contexts of `Content Types` and `Content Items`. To gain a complete understanding of the entire process of setting up endpoints and rendering the results to the front-end, read the chapters [Access to Relational Data](../access-to-relational-data) and [OData Table](../odata-table). The [Content Anatomy](../content-anatomy/#content-item) chapter contains a more detailed view of `Content Item` and `Content Type` concepts.

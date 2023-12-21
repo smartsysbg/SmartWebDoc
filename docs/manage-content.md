@@ -1,6 +1,6 @@
 #
 
-This chapter describes the admin interface related to content management. The **SmartWEB** admin interface, also known as the `Back-End` or `Admin Panel`, is essentially the control panel for the entire website. The `Admin Panel` is the interface where administrators and other site officials with appropriate privileges can create and manage content, change functionality and styling and etc. The [Admin Interface Overview](/admin-interface-overview) chapter provides a brief overview of all the administration options, with links to chapters with in-depth descriptions.  
+This chapter describes the admin interface related to content management. The **SmartWEB** admin interface, also known as the `Back-End` or `Admin Panel`, is essentially the control panel for the entire website. The `Admin Panel` is the interface where administrators and other site officials with appropriate privileges can create and manage content, change functionality and styling and etc. The [Admin Interface Overview](../admin-interface-overview) chapter provides a brief overview of all the administration options, with links to chapters with in-depth descriptions.  
 
 ## Content Management
 
@@ -8,7 +8,7 @@ Navigate to the `Dashboard` via the user options in the top-right of the page.
 
 ![](./media/manage-content/user-dashboard.png)
 
-All of the `Content Types` that the current user can use to create content are on the left side of the page, located under the `NEW` dropdown list. The administrator of course sees all `Content Types`. In the picture below, there are only four `Content Types` that the current user can use to create `Content Items`. The [Content Anatomy](/content-anatomy) chapter describes what the `Content Types` is and what the `Content Item` is. The [Users and Roles](/users-and-roles) chapter describes how to create user roles with limited access to the site's administrative options and also limited access to the content.  
+All of the `Content Types` that the current user can use to create content are on the left side of the page, located under the `NEW` dropdown list. The administrator of course sees all `Content Types`. In the picture below, there are only four `Content Types` that the current user can use to create `Content Items`. The [Content Anatomy](../content-anatomy) chapter describes what the `Content Types` is and what the `Content Item` is. The [Users and Roles](../users-and-roles) chapter describes how to create user roles with limited access to the site's administrative options and also limited access to the content.  
 
 ![](./media/manage-content/content-types.png)
 
@@ -17,7 +17,7 @@ Below the available content types, there is a `Content` link as shown in the pre
 Let's now describe the information fields that `Manage Content` view provides for each content item. For simplicity, the fields are numbered on the next picture, and here follow their descriptions.  
 
 `(1)` - Content item Title.  
-`(2)` - The content type from which the content item is derived. For a more detailed description of these interrelationships, please refer to the [Content Anatomy](/content-anatomy) chapter.  
+`(2)` - The content type from which the content item is derived. For a more detailed description of these interrelationships, please refer to the [Content Anatomy](../content-anatomy) chapter.  
 `(3)` - Unique ID of the content item.  
 `(4)` - Version of the content item. This is actually а `link` that leads to a page where all versions of the given content item are listed and also some actions can be performed on them. This is covered in more detail later in this section.  
 `(5)` - The timestamp of the last modification of the content item.  
@@ -25,7 +25,7 @@ Let's now describe the information fields that `Manage Content` view provides fo
 
 ![](./media/manage-content/Screenshot_3.png)
 
-On the right of each content item is a `list of actions` allowed to the current user for that content item. In the picture above these actions are highlighted with a solid red line. The allowed actions a user can perform on a content item depend on the permissions granted by the roles assigned to the user. This is described in detail in the chapter [Users and Roles](/Users-and-Roles). Users who have been assigned the `admin` role have full permissions on all content and can therefore perform all available actions. The possible actions you can see to the right of the content items are:  
+On the right of each content item is a `list of actions` allowed to the current user for that content item. In the picture above these actions are highlighted with a solid red line. The allowed actions a user can perform on a content item depend on the permissions granted by the roles assigned to the user. This is described in detail in the chapter [Users and Roles](../Users-and-Roles). Users who have been assigned the `admin` role have full permissions on all content and can therefore perform all available actions. The possible actions you can see to the right of the content items are:  
 
 - `View` –  View a published version of the content item. The published version of the content is what users see.  
 - `Preview` – Preview an draft version of the content item. The draft version of the content item is a version that is usually in preparation or being edited, but is still being worked on and is not ready for publication. This version is not available to users.  
@@ -39,7 +39,7 @@ On the right of each content item is a `list of actions` allowed to the current 
 !!!tip "Note"
     If the `View` link is displayed along with the `Preview` link, you will also see the `Publish Draft` link. This means that the content item has a published version and a draft version that is newer than the published version. The draft in this case is the `latest version`. If you click on `Publish Draft` link, then the draft will be published and will become available to the users. Further explanations can be found further down in this section.  
 
-There are two ways to create new content item. By using the `Create New Content` option in the top right corner of the `Manage Content` view and by cloning an existing content item using the `Clone` action. You can also import content items, but this topic is covered in the [Import and Export](/import-and-export) chapter. The following image illustrates the content management flow.  
+There are two ways to create new content item. By using the `Create New Content` option in the top right corner of the `Manage Content` view and by cloning an existing content item using the `Clone` action. You can also import content items, but this topic is covered in the [Import and Export](../import-and-export) chapter. The following image illustrates the content management flow.  
 
 ![](./media/manage-content/manage-content.png)
 
@@ -87,11 +87,11 @@ The options that are provided by the toolbar consist of:
 The system has built-in functionality that provides the ability to index and search `Content Items` (pages) in the application. In the admin panel, navigate to `Content` and select the Search `Tab`.
 
 !!! note "Note:"
-      The indexing functionality is provided by enabling the Indexing feature, along with a specific implementation of indexing (Lucene-based is included by default). In addition to the Indexing, the Search feature provides the ability to query the index (by keyword or using Lucene query syntax) to return a list of content items. Visit the [Site Settings](/Site-Settings) chapter for more information on indexing.
+      The indexing functionality is provided by enabling the Indexing feature, along with a specific implementation of indexing (Lucene-based is included by default). In addition to the Indexing, the Search feature provides the ability to query the index (by keyword or using Lucene query syntax) to return a list of content items. Visit the [Site Settings](../Site-Settings) chapter for more information on indexing.
 
 ![](./media/manage-content/Screenshot_7.png)
 
-There is a selection of ways to search for a `Content Item` (page). The specific fields which represent the search criteria are configured within an index ([Site Settings](/Site-Settings)). For demonstration purposes, some of the ways to search for content will be shown:
+There is a selection of ways to search for a `Content Item` (page). The specific fields which represent the search criteria are configured within an index ([Site Settings](../Site-Settings)). For demonstration purposes, some of the ways to search for content will be shown:
 
 !!!note "Note:"
           Due to the nature of indexing, it's good practice to use lowercase when searching for an item.
@@ -118,7 +118,7 @@ Using the authors name as the search criteria is also an option. This will retur
 ![](./media/manage-content/Screenshot_15.png)
 
 !!! attention "Important:"  
-      In order for the [lucene query syntax](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html) to be used in the search, the `Do Not Escape Query` option must be checked ([Site Settings](/Site-Settings)).
+      In order for the [lucene query syntax](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html) to be used in the search, the `Do Not Escape Query` option must be checked ([Site Settings](../Site-Settings)).
 
 
 ##Recycle Bin

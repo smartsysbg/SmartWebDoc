@@ -9,10 +9,10 @@ Access to relational data is an essential part of any **Content Management Syste
 
 ![](./media/access-to-relational-data/image0.png)
 
-To understand the concept of `Content Type` and `Content Items` see chapter [Content Anatomy](/content-anatomy). 
+To understand the concept of `Content Type` and `Content Items` see chapter [Content Anatomy](../content-anatomy). 
 
 !!! attention "Attention"
-      **Smartsys Ltd** is developing an **Smart OData Server** which provides `OData` end point. The server supports connecting to many different relational databases simultaneously using plug-in technology. Any test client that supports `OData` protocol (like `LINQPad`) can be used to facilitate configuration and setup of `OData` end points. For additional information about installing and configuring **Smart OData Server**, see the related documentation [here](/).
+      **Smartsys Ltd** is developing an **Smart OData Server** which provides `OData` end point. The server supports connecting to many different relational databases simultaneously using plug-in technology. Any test client that supports `OData` protocol (like `LINQPad`) can be used to facilitate configuration and setup of `OData` end points. For additional information about installing and configuring **Smart OData Server**, see the related documentation [here](../).
 
 ---
 ## OData Gateways

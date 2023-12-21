@@ -9,10 +9,10 @@
 
 ![](./media/access-to-opc-data/image0.png)
 
-To understand the concept of `Content Type` and `Content Items` see chapter [Content Anatomy](/content-anatomy).
+To understand the concept of `Content Type` and `Content Items` see chapter [Content Anatomy](../content-anatomy).
 
 !!! attention "Attention"
-    The **OPC Foundation** only provides a specification for `OPC XML-DA`. **Smartsys Ltd** is developing an **`Smart OPC XML Server`** that provides end points for both `OPC XML-DA` and `OPC XLM-HDA` (History Data Access). Data access part of this server is fully compatible with **OPC Foundation** specification, while `HDA` part was developed by **Smartsys Ltd** in a similar way to the `OPC XML-DA` specification and it provides data from `OPC HDA Classic` data sources in `XML` format. The company is also developing test clients for `OPC XML-DA/HDA` to facilitate configuration and setup. For additional information about installing and configuring **`Smart OPC XML Server`**, see the related documentation [here](/).
+    The **OPC Foundation** only provides a specification for `OPC XML-DA`. **Smartsys Ltd** is developing an **`Smart OPC XML Server`** that provides end points for both `OPC XML-DA` and `OPC XLM-HDA` (History Data Access). Data access part of this server is fully compatible with **OPC Foundation** specification, while `HDA` part was developed by **Smartsys Ltd** in a similar way to the `OPC XML-DA` specification and it provides data from `OPC HDA Classic` data sources in `XML` format. The company is also developing test clients for `OPC XML-DA/HDA` to facilitate configuration and setup. For additional information about installing and configuring **`Smart OPC XML Server`**, see the related documentation [here](../).
 
 Configurations for `OPC XML-DA` and `OPC XML-HDA` in **SmartWEB** are discussed in separate sections later in this chapter.
 
@@ -47,7 +47,7 @@ Once you have created the gateway, you need to configure it. To do this click on
 The first group of settings is shown in the next picture.
 ![](./media/access-to-opc-data/image4.png)
 
-`(1)` - Enter the `URL` to the `OPC XM-DA` service. The `URL` that is shown in the example is for the **`Smart OPC XML Server`** when the service is installed on the same computer with **SmartWEB** application server and it is listening on `TCP` port 8091. The service can of course be installed on another computer and the port changed in the server configuration file. For more information on installing and setting up the **`Smart OPC XML Server`**, see the server documentation [here](/). If you are using `OPC XML` servers from other vendors see their documentation to set up the `URL` correctly. Use the **`Smart OPC XML-DA Client`** to verify the operability of each `OPC XML` server before setting up the `URL` in **SmartWEB**.  
+`(1)` - Enter the `URL` to the `OPC XM-DA` service. The `URL` that is shown in the example is for the **`Smart OPC XML Server`** when the service is installed on the same computer with **SmartWEB** application server and it is listening on `TCP` port 8091. The service can of course be installed on another computer and the port changed in the server configuration file. For more information on installing and setting up the **`Smart OPC XML Server`**, see the server documentation [here](../). If you are using `OPC XML` servers from other vendors see their documentation to set up the `URL` correctly. Use the **`Smart OPC XML-DA Client`** to verify the operability of each `OPC XML` server before setting up the `URL` in **SmartWEB**.  
 `(2)` - Optionally, you can write a descriptor for this gateway here.  
 `(3)-(9)` - These options enable or disable specific methods. See the `OPC XML-DA` specification for details related to the methods supported by the protocol.
 

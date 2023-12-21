@@ -3,7 +3,7 @@
 integrated in SmartWEB via the OPC (Open Platform Communications)
 specifications for process data. The `HMI2SmartWebConvertor` tool helps
 with the `HMI` (Human-Machine Interface). It converts HMI displays in a
-suitable format for the [Svg-Editor module](/hmi-editor-in-depth) 
+suitable format for the [Svg-Editor module](../hmi-editor-in-depth) 
 and support configurations.
 
 ##Prerequisites
@@ -70,7 +70,7 @@ displays (6 displays and 3 of them are added for converting).
 ##Analyzing Shapes
 
 `Compatible shapes` are shapes that are developed in SmartWEB to have
-the same behavior and view as EPKS shapes. Visit the [Dynamic Shapes Development](/dynamic-shapes-development) chapter for more information on shapes.
+the same behavior and view as EPKS shapes. Visit the [Dynamic Shapes Development](../dynamic-shapes-development) chapter for more information on shapes.
 
 When the desired HMI displays are selected, the next stage is to
 configure the shapes. By clicking on `Next` the following window will appear.
@@ -244,7 +244,7 @@ specify a horizontal and a vertical offset in the fields that follow.
 #### Shape Components Tab
 
 In this tab, the user will be able to see all of the information
-provided by directives and base elements ([Svg Editor](/hmi-editor-in-depth)).
+provided by directives and base elements ([Svg Editor](../hmi-editor-in-depth)).
 
 ![](./media/hmiweb-to-svg/image10.png)
 
@@ -308,5 +308,5 @@ finished. This will be indicated by the last log:
 ![](./media/hmiweb-to-svg/image13.png)
 
 The result will be a set of `SVG` files for each display. These files
-are compatible with the [Svg Editor](/hmi-editor-in-depth), and can be used after they are
+are compatible with the [Svg Editor](../hmi-editor-in-depth), and can be used after they are
 imported.

@@ -111,7 +111,7 @@ In conclusion, the custom trend saves the list of trend parameters. This allows 
 
 The system allows users who have the necessary rights to create their own trend web pages. 
 
-Navigate to `Dashboard` > `New`. The Web pages for the user's specific role are displayed. From this menu the trend page option can be selected in order to create a trend. If the list is blank, the specific role does not have the required permissions to create pages. For more information on permissions visit the [Users and Roles](/users-and-roles) chapter.
+Navigate to `Dashboard` > `New`. The Web pages for the user's specific role are displayed. From this menu the trend page option can be selected in order to create a trend. If the list is blank, the specific role does not have the required permissions to create pages. For more information on permissions visit the [Users and Roles](../users-and-roles) chapter.
 
 ![](./media/dygraph-trend/7.png)
 
@@ -461,7 +461,7 @@ These settings allow for deeper customization of the visual aspect of the trace 
 
 ####Advanced Settings
 
-The trends in **SmartWEB** are added to `Content Items` as `Content Parts` (Visit the [Content Anatomy](/content-anatomy) chapter for more information.). The advanced section is visible only in the `Content Type` of the trend and it determines if the advanced settings for each settings type will be enabled in the `Content Items`.
+The trends in **SmartWEB** are added to `Content Items` as `Content Parts` (Visit the [Content Anatomy](../content-anatomy) chapter for more information.). The advanced section is visible only in the `Content Type` of the trend and it determines if the advanced settings for each settings type will be enabled in the `Content Items`.
 
 The advanced settings consist of:
 

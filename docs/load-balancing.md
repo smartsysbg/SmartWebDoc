@@ -1,6 +1,6 @@
 #
 
-To help you learn the material covered in this chapter, it is a good idea to read the [Architectural Considerations](../architectural-considerations) and [Multitenancy](../multitenancy) chapters first. These chapters provide the background knowledge necessary to understand the material in this chapter. The [Architectural Considerations](/architectural-considerations) chapter describes the modes and architectures in which **SmartWEB** operates.  The [Multitenancy](/multitenancy) chapter describes how to set up and manage tenants in `Мultitenancy` mode. The two modes, `Multitenancy` and `Load Balancing`, are complementary and almost always work together. They can work independently, but working together makes the system a `Cloud-Ready Enterprise System` with excellent utilisation of server computing power and providing the desired level of application redundancy.  
+To help you learn the material covered in this chapter, it is a good idea to read the [Architectural Considerations](../architectural-considerations) and [Multitenancy](../multitenancy) chapters first. These chapters provide the background knowledge necessary to understand the material in this chapter. The [Architectural Considerations](../architectural-considerations) chapter describes the modes and architectures in which **SmartWEB** operates.  The [Multitenancy](../multitenancy) chapter describes how to set up and manage tenants in `Мultitenancy` mode. The two modes, `Multitenancy` and `Load Balancing`, are complementary and almost always work together. They can work independently, but working together makes the system a `Cloud-Ready Enterprise System` with excellent utilisation of server computing power and providing the desired level of application redundancy.  
 
 ---
 
@@ -27,7 +27,7 @@ To illustrate the configuration and operation of `Load Balancing` mode, we will 
 
 ## Database Preparation
 
- We need to create a separate database for each tenant and we also need to create one database for the `Default Tenant`.  Databases and database users are configured in the same way as described in the [Multitenancy](/multitenancy/#database-preparation) chapter. You can use the information in this chapter to create your databases and users.  
+ We need to create a separate database for each tenant and we also need to create one database for the `Default Tenant`.  Databases and database users are configured in the same way as described in the [Multitenancy](../multitenancy/#database-preparation) chapter. You can use the information in this chapter to create your databases and users.  
 
  Also, using a text editor, open the `pg_hba.conf` file in the `data` directory of the `PostgreSQL` server. Add a configuration line for each application server you want to connect to the database, replacing `A.B.C.D` with the `IP address` of the server.  
 
@@ -60,7 +60,7 @@ port 6379
 
 ## Application Servers Preparation
 
-Once we have prepared the necessary databases and installed and configured the `Redis Cache` server, we can proceed to configure the **SmartWEB** application servers. In this chapter we will not describe how to install a **SmartWEB** server. This is done in the [Getting Started](/getting-started) chapter. Here we assume that you have installed **SmartWEB** on both machines, i.e. that you have installed and configured `IIS` on them, and that you can browse and login to `http://localhost` locally from both servers.   
+Once we have prepared the necessary databases and installed and configured the `Redis Cache` server, we can proceed to configure the **SmartWEB** application servers. In this chapter we will not describe how to install a **SmartWEB** server. This is done in the [Getting Started](../getting-started) chapter. Here we assume that you have installed **SmartWEB** on both machines, i.e. that you have installed and configured `IIS` on them, and that you can browse and login to `http://localhost` locally from both servers.   
 
 ---
 
@@ -118,7 +118,7 @@ Before proceeding with the initialisation of **SmartWEB**, we also need to confi
 </configuration>
 ```
 
-You are now ready to run the **SmartWEB** application pool on the first server. If you navigate to `http://localhost` on the first server, an initialisation page will open.  The initialisation process is described in the [Multitenancy](/multitenancy/#creating-a-default-tenant) chapter. Follow the steps in that chapter and fill in the required information. The first tenant to be created is the `Default Tenant` and in the `Connection string` field you must specify the database intended for the `Default Tenant`. In the `Recipe` field you must select `SmartWeb Web Farm Core`. Click on the `Finish Setup` button  to start cooking the recipe. The recipe used will enable the modules required for the application server to operate with  `Load Balanser` at front. Once you have successfully cooked the recipe, you can log in to the `Admin Panel` and you will see the `Default Tenant` in the list of tenants.  
+You are now ready to run the **SmartWEB** application pool on the first server. If you navigate to `http://localhost` on the first server, an initialisation page will open.  The initialisation process is described in the [Multitenancy](../multitenancy/#creating-a-default-tenant) chapter. Follow the steps in that chapter and fill in the required information. The first tenant to be created is the `Default Tenant` and in the `Connection string` field you must specify the database intended for the `Default Tenant`. In the `Recipe` field you must select `SmartWeb Web Farm Core`. Click on the `Finish Setup` button  to start cooking the recipe. The recipe used will enable the modules required for the application server to operate with  `Load Balanser` at front. Once you have successfully cooked the recipe, you can log in to the `Admin Panel` and you will see the `Default Tenant` in the list of tenants.  
 
 !!!error "Installation Errors Handling" 
     If **errors** occur and you are unable to cook the recipe, you should go to the `inetpub>SmartWeb>App_Data>Logs` folder and investigate the reasons for the failure using the error records in the log files.  
@@ -131,19 +131,19 @@ To test your environment run application pools and **SmartWEB** sites on all app
 
 #### Application Tenants Instalation
 
-Once you have managed to run `Default Tenant` on all application servers, you can start creating the application tenants. To do this, browse to `http://localhost/Admin/MultiTenancy` on any of the the application servers and create a new tenant using the `Add a Tenant` button. Follow the steps described in the [Multitenancy](/multitenancy/#creating-application-tenants) chapter to create a new application tenant.  
+Once you have managed to run `Default Tenant` on all application servers, you can start creating the application tenants. To do this, browse to `http://localhost/Admin/MultiTenancy` on any of the the application servers and create a new tenant using the `Add a Tenant` button. Follow the steps described in the [Multitenancy](../multitenancy/#creating-application-tenants) chapter to create a new application tenant.  
 
 !!!note "Tenant Management Module" 
     When we installed the `Default Tenant` above, we used the `SmartWeb Web Farm Core` recipe. This recipe enables the  `Multi Тenancy` module and you don't need to do this manually.  
 
-Fill in the required information. For `Database`, select one of the databases you prepared for the аpplication tenant. Click the `Save` button to create the tenant. Once you have successfully created the tenant, you will need to initialise it. Again, follow the steps described in the [Multitenancy](/multitenancy/#creating-application-tenants) chapter. Fill in the required information. In the Recipe field, you must select `SmartWeb Web Farm Tenant`. This recipe will enable the necessary modules to run the tenant behind a `Load Balancer` where there are multiple active instances of the tenant deployed on different application servers.  
+Fill in the required information. For `Database`, select one of the databases you prepared for the аpplication tenant. Click the `Save` button to create the tenant. Once you have successfully created the tenant, you will need to initialise it. Again, follow the steps described in the [Multitenancy](../multitenancy/#creating-application-tenants) chapter. Fill in the required information. In the Recipe field, you must select `SmartWeb Web Farm Tenant`. This recipe will enable the necessary modules to run the tenant behind a `Load Balancer` where there are multiple active instances of the tenant deployed on different application servers.  
 
 Once you have successfully cooked the recipe, you now have your first application tenant. However, this tenant is only running on the application server where you ran the recipe. Its instances on the other application servers are still in the `Uninitialised` state. This is done so that you can finish building content or other necessary settings before all instances of the application tenant are started. You can access the tenant from the application server on which you created it by browsing to `http://localhost/tenant1`, where `tenant1` is the tenant prefix you configured when you created the tenant.  If you have content ready, you can load it or start creating it.  
 For demonstration purposes, let's load the demo content using the embedded recipes. Browse to the `Modules` link in the `Admin Panel` and open the `Recipes` tab.  Run the two recipes one after the other:  
 > -  Smart Web Preconfigured Content  
 > -  Smart Web Demo Content  
 
-You can find out more about the recipes in the [Modules](/modules) chapter. Once you have successfully cooked both recipes, browse to the tenant's home page `http://localhost/tenant1`. Your browser will load a page similar to the one shown below.  
+You can find out more about the recipes in the [Modules](../modules) chapter. Once you have successfully cooked both recipes, browse to the tenant's home page `http://localhost/tenant1`. Your browser will load a page similar to the one shown below.  
 
 ![](./media/load-balancing/sw-demo-home-page.png)
 
@@ -205,4 +205,4 @@ The application server that served your requests is now `Offline`. Reload the br
 
 #### Summary
 
-In this chapter we have discussed in detail the configuration of **SmartWEB** in `Load Balancing` mode. If you have followed all the steps described here, you have now an environment that runs in both `Multitenancy` and `Load Balancing` modes. To configure an environment to run in `Multitenancy` mode only, refer to the [Multitenancy](/multitenancy) chapter. The [Architectural Considerations](/architectural-considerations) chapter briefly describes all modes of operation, along with their pros and cons.  
+In this chapter we have discussed in detail the configuration of **SmartWEB** in `Load Balancing` mode. If you have followed all the steps described here, you have now an environment that runs in both `Multitenancy` and `Load Balancing` modes. To configure an environment to run in `Multitenancy` mode only, refer to the [Multitenancy](../multitenancy) chapter. The [Architectural Considerations](../architectural-considerations) chapter briefly describes all modes of operation, along with their pros and cons.  

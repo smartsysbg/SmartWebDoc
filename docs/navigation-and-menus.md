@@ -15,7 +15,7 @@ flexibility when it comes to menu permissions.
 
 ![](media/navigation-and-menus/Menus-and-Widgets.png)
 
-Visit the [Widgets](/Widgets) chapter for more information on `Widgets`.
+Visit the [Widgets](../Widgets) chapter for more information on `Widgets`.
 
 In the following chapter, the way of creating menus in **SmartWEB** will be
 discussed, as well as their components.
@@ -62,11 +62,11 @@ an entirely separate menu.
 ![](./media/navigation-and-menus/Screenshot_80.png)
 
 
-Visit the [Content Anatomy](/Content-Anatomy) chapter for more information on
+Visit the [Content Anatomy](../Content-Anatomy) chapter for more information on
 `Content Types` and `Content Items`.
 
 ## Menu Permissions
-Menu permissions manage the level of access, which different roles have to each individual menu item. Each role has a set of permissions assigned to it, and these permissions indicate which actions a user in that role can perform on the specific menu item. Visit the [Users and Roles](/Users-and-Roles) chapter for more information on user `Roles`.
+Menu permissions manage the level of access, which different roles have to each individual menu item. Each role has a set of permissions assigned to it, and these permissions indicate which actions a user in that role can perform on the specific menu item. Visit the [Users and Roles](../Users-and-Roles) chapter for more information on user `Roles`.
 
 Menu permissions create a way to filter and customize menus, depending on the role of the user. A user with low access permissions will have access to a lower number of menus and submenus, as opposed to a user with high access permissions, who is given a more complete version of the menu. This method alleviates the need to create separate menus for each role,providing a flexible way of managing `Content Item access control`.
 
@@ -388,5 +388,5 @@ contents.
 
 !!!note "Note that:"
     This form of representing menu items is done with the help
-    of the `Smart Web Menu Widget`. Visit the [Widgets](/Widgets) chapter for more
+    of the `Smart Web Menu Widget`. Visit the [Widgets](../Widgets) chapter for more
     information on `Widgets`.

@@ -3,13 +3,13 @@
 
 ![](./media/hmi-editor-mastering/image0.png)
 
-The graphical editor is also used for the development of dynamic elements (`Shapes`). The system comes equipped with pre-built shapes that are ready to use, but you can also create new, custom shapes that meet specific project requirements and extend the built-in library. The [Dynamic Shapes Development](/dynamic-shapes-development) chapter describes how to create custom shapes.
+The graphical editor is also used for the development of dynamic elements (`Shapes`). The system comes equipped with pre-built shapes that are ready to use, but you can also create new, custom shapes that meet specific project requirements and extend the built-in library. The [Dynamic Shapes Development](../dynamic-shapes-development) chapter describes how to create custom shapes.
 
 ---
 
 ## Editor Features
 
-The `Smartsys Svg Editor` module provides a graphical editor. The module brings a new `Content Field` to the fieldset that can be attached to every `Content Type`. The following image shows the configuration of a `Content Type` with an embedded `Svg Field`. Visit the [Content Anatomy](/content-anatomy) chapter for additional information on `Content Types`, `Content Parts`, and `Content Fields`.
+The `Smartsys Svg Editor` module provides a graphical editor. The module brings a new `Content Field` to the fieldset that can be attached to every `Content Type`. The following image shows the configuration of a `Content Type` with an embedded `Svg Field`. Visit the [Content Anatomy](../content-anatomy) chapter for additional information on `Content Types`, `Content Parts`, and `Content Fields`.
 
 ![](./media/hmi-editor-mastering/image1.png)
 
@@ -17,7 +17,7 @@ There are a number of `Svg Field` configurations available on the `Content Type`
 
 !!!note "Note:"
       Note that there are three vital parts added to the `Content Type`. Two for `Opc Da access` and  
-      `Opc Hda access` and one is a common `Opc Xml` client library. The web page is animated, thanks to the data provided by these parts. The [Access to OPC Data](/access-to-opc-data) chapter covers `Opc Da` and `Opc Hda` data providers.
+      `Opc Hda access` and one is a common `Opc Xml` client library. The web page is animated, thanks to the data provided by these parts. The [Access to OPC Data](../access-to-opc-data) chapter covers `Opc Da` and `Opc Hda` data providers.
 
 Now, let's see how the graphical editor looks inside the `Content Item` configuration and walk through the tools provided by the editor. The following image shows the editor, along with loaded graphical content in its canvas.
 
@@ -45,7 +45,7 @@ Now, let's see how the graphical editor looks inside the `Content Item` configur
 
 ![](./media/hmi-editor-mastering/image5.png)
 
-- `Fast Publish` - Executes `Unpublish` and `Publish Now` for the current `Content Item` sequentially. This way, the `Content Item` is published with one operation without updating its version. The chapter [Manage Content](/manage-content) provides a complete explanation of content publishing and content versioning.
+- `Fast Publish` - Executes `Unpublish` and `Publish Now` for the current `Content Item` sequentially. This way, the `Content Item` is published with one operation without updating its version. The chapter [Manage Content](../manage-content) provides a complete explanation of content publishing and content versioning.
 
 ---
 
@@ -175,7 +175,7 @@ The `Statistics Controller` takes care of communication statistics. Tracks respo
 
 #### Shape Library
 
-The SVG-editor contains dynamic base components (directives), which are used as the **basic building blocks** for rendering dynamic information. Each of these base components can work entirely independently, but several of them can also be grouped into one element (Shape), which utilizes their separate functionalities. By consolidating the base components, different shapes can be built that vary in features and complexity. The [Dynamic Shapes Development](/dynamic-shapes-development) chapter explains the development process of such custom shapes.
+The SVG-editor contains dynamic base components (directives), which are used as the **basic building blocks** for rendering dynamic information. Each of these base components can work entirely independently, but several of them can also be grouped into one element (Shape), which utilizes their separate functionalities. By consolidating the base components, different shapes can be built that vary in features and complexity. The [Dynamic Shapes Development](../dynamic-shapes-development) chapter explains the development process of such custom shapes.
 
 ---
 
@@ -197,7 +197,7 @@ The configuration options are spread into three separate tabs in the configurati
 
 ![](./media/hmi-editor-mastering/image16.png)
 
-This tab contains the data reference parameters for the shape. From the `DataProviderKey` field, one of the available `Opc Xml Da Data Providers` can be selected. The providers that are available for the current page can be selected from the drop-down list. For more information - see chapters [Access to OPC data](/access-to-opc-data) and [Content Anatomy](/content-anatomy). For static elements and shapes, this field remains blank. When a `Data Provider` is not selected, all other fields in this tab remain hidden.
+This tab contains the data reference parameters for the shape. From the `DataProviderKey` field, one of the available `Opc Xml Da Data Providers` can be selected. The providers that are available for the current page can be selected from the drop-down list. For more information - see chapters [Access to OPC data](../access-to-opc-data) and [Content Anatomy](../content-anatomy). For static elements and shapes, this field remains blank. When a `Data Provider` is not selected, all other fields in this tab remain hidden.
 
 The `Opc Xml Item Name` is entered in the `ItemName` field, according to the  
 `Opc Xml Da Specification 1.0`. This is how a specific point from the namespace of the server is accessed. Below the `ItemName` field, there are fields for each component of the shape that requires a data source. They can be assigned to separate `ItemNames`, allowing for data to be read from different address space entries. If the fields are left blank, the corresponding base components will use the default `ItemName` that was added at the top.
@@ -289,7 +289,7 @@ window.my_function = function (me) {
 
 ```
 
-The [Dynamic Shapes Development](/dynamic-shapes-development) chapter discusses *JavaScript* custom functions.
+The [Dynamic Shapes Development](../dynamic-shapes-development) chapter discusses *JavaScript* custom functions.
 
 ---
 
@@ -324,7 +324,7 @@ The following image presents an example faceplate for the Honeywell EPKS - **PID
 The following image presents an example detail display for the Honeywell EPKS - **PID controller**.
 ![](./media/hmi-editor-mastering/image25.1.png)
 
-`(3)` - **Faceplate from ObjectStore** - This action has the same behavior as the faceplate option, with the exception that the address to the system page is not entered. It is stored in [Object Store](/object-store), and taken automatically by the system. If the entity does not exist in the `Object Store`, the menu link will be inactive.
+`(3)` - **Faceplate from ObjectStore** - This action has the same behavior as the faceplate option, with the exception that the address to the system page is not entered. It is stored in [Object Store](../object-store), and taken automatically by the system. If the entity does not exist in the `Object Store`, the menu link will be inactive.
 
 ![](./media/hmi-editor-mastering/image26.png)
 
@@ -335,7 +335,7 @@ The following image presents an example detail display for the Honeywell EPKS - 
 !!!note "Note:"
     The system is able to provide pre-built `Faceplates` and `Detail displays` for all entity types used in **Honeywell EPKS**. For other DCS, such system pages need to be additionally developed.
 
-`(5)` - **Associated Displays** - This action will open a dialog box with a list of links to `content items` in which the selected entity is present. Two configuration fields become available when this option is selected. The address of a pre-created `Smart Search Template` is entered in the `Url` field. This template handles the indexing of `content items`, taking into account user permissions. In the `Parameter` field, the `ItemName` configured in the `Properties` tab is referred to by using `Item Substitution`. The [Site Settings](/site-settings) chapter provides a detailed explanation of `Smart Search Templates`.
+`(5)` - **Associated Displays** - This action will open a dialog box with a list of links to `content items` in which the selected entity is present. Two configuration fields become available when this option is selected. The address of a pre-created `Smart Search Template` is entered in the `Url` field. This template handles the indexing of `content items`, taking into account user permissions. In the `Parameter` field, the `ItemName` configured in the `Properties` tab is referred to by using `Item Substitution`. The [Site Settings](../site-settings) chapter provides a detailed explanation of `Smart Search Templates`.
 
 ![](./media/hmi-editor-mastering/image28.png)
 
@@ -350,7 +350,7 @@ The dialog contains a list of links to **Associated Displays**.
 
 ![](./media/hmi-editor-mastering/image29.png)
 
-The [Dygraph Trend](/dygraph-trend) chapter describes the configuration and features of the trend.
+The [Dygraph Trend](../dygraph-trend) chapter describes the configuration and features of the trend.
 
 !!!note "Mini Trend Example:"
         Now, let's take a look at an example. The image below shows how the `Mini Trend` looks on the front-end. In this example, the `ItemName` configured in the   `Properties` tab is: `VIRTUALIZE.PLANT.ASSETS.UNIT1.100PIC003`.
