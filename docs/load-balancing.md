@@ -173,11 +173,11 @@ Once we configure `Load Balancer` and browse through it, we can do such inspecti
 As mentioned in the [Overview](#overview) section, we will use an `MS IIS` server as a `Load Balancer`, installed on the same machine as the `PostgreSQL` and `Redis Cache` servers. 
 
 !!!tip "Selecting Load Balancer" 
-    You can use a different `Load Balancer` that allows you to configure the `Client Affinity` and `Preserve Host Header` options.   
+    Any `Load Balancer` server that supports the `Client Affinity` and `Preserve Host Header` options can be used.  
 
 In order for `IIS` to work as a `Load Balancer`, two additional `IIS` modules need to be installed. These are the `URL Rewrite` module and the `Application Request Routing` module. Both modules can be downloaded from Microsoft. Once the two modules have been installed, an additional node called `Server Farms` will appear in the `IIS Manager` tree.  
 
-Create a new `Server Farm` using right mouse click. The wizard will ask you for the `IP Аddresses` of your application servers and then ask you to create a rule to route traffic to the servers. Answer `Yes`to this question.  
+Create a new `Server Farm` by right-clicking on it. The wizard will ask you for the `IP addresses` of your application servers and then ask if you want to create a rule to route traffic to the servers. Answer `Yes` to this question.  
 
 ![](./media/load-balancing/load-balancer-create-farm.png)
 

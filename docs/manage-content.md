@@ -1,6 +1,6 @@
 #
 
-This chapter describes the admin interface related to content management. The **SmartWEB** admin interface, also known as the `Back-End` or `Admin Panel`, is essentially the control panel for the entire website. The `Admin Panel` is the interface where administrators and other site officials with appropriate privileges can create and manage content, change functionality and styling and etc. The [Admin Interface Overview](../admin-interface-overview) chapter provides a brief overview of all the administration options, with links to chapters with in-depth descriptions.  
+This chapter describes the admin interface related to content management. The **SmartWEB** admin interface, also known as the `Back-End` or `Admin Panel`, is essentially the control panel for the entire website. The `Admin Panel` is the interface where administrators and other site officials with appropriate privileges can create and manage content, change functionality and styling and etc. The [Admin Interface Overview](../admin-interface-overview) chapter provides a brief overview of all the administration options, with links to chapters with more detailed descriptions.  
 
 ## Content Management
 
@@ -8,50 +8,50 @@ Navigate to the `Dashboard` via the user options in the top-right of the page.
 
 ![](./media/manage-content/user-dashboard.png)
 
-All of the `Content Types` that the current user can use to create content are on the left side of the page, located under the `NEW` dropdown list. The administrator of course sees all `Content Types`. In the picture below, there are only four `Content Types` that the current user can use to create `Content Items`. The [Content Anatomy](../content-anatomy) chapter describes what the `Content Types` is and what the `Content Item` is. The [Users and Roles](../users-and-roles) chapter describes how to create user roles with limited access to the site's administrative options and also limited access to the content.  
+All the `Content Types` that the current user can use to create content are on the left hand side of the page, below the `New` dropdown list. Of course, the administrator can see all the `Content Types`. In the image below, there are only four `Content Types` that the current user can use to create `Content Items`. The [Content Anatomy](../content-anatomy) chapter describes what the `Content Types` are and what the `Content Item` is. The [Users and Roles](../users-and-roles) chapter describes how to create user roles with limited access to the site's administrative options and also limited access to the content.  
 
 ![](./media/manage-content/content-types.png)
 
-Below the available content types, there is a `Content` link as shown in the previous picture. This link leads to the `Manage Content` section shown in the next screenshot. Here content can be viewed, searched, created and edited. All available content items (Pages) can be found here.  
+Below the available content types is a `Content` link, as shown in the previous image. This link takes you to the `Manage Content` section shown in the next screenshot. Here you can view, search, create and edit content. All available content items (Pages) can be found here.  
 
-Let's now describe the information fields that `Manage Content` view provides for each content item. For simplicity, the fields are numbered on the next picture, and here follow their descriptions.  
+Let's now describe the information fields that the `Manage Content` view provides for each content item. For ease of reference, the fields are numbered on the next image, and their descriptions follow:  
 
 `(1)` - Content item Title.  
-`(2)` - The content type from which the content item is derived. For a more detailed description of these interrelationships, please refer to the [Content Anatomy](../content-anatomy) chapter.  
-`(3)` - Unique ID of the content item.  
-`(4)` - Version of the content item. This is actually а `link` that leads to a page where all versions of the given content item are listed and also some actions can be performed on them. This is covered in more detail later in this section.  
+`(2)` - The content type from which the content item is derived. A more detailed description of these relationships can be found in the [Content Anatomy](../content-anatomy) chapter.  
+`(3)` - Unique `ID` of the content item.  
+`(4)` - Version of the content item. This is actually а `link` that leads to a page where all versions of the given content item are listed and also some actions can be performed on them. This is discussed in more detail later in this section.  
 `(5)` - The timestamp of the last modification of the content item.  
 `(6)` - The owner of the given content item. This is the user who created the content item.  
 
-![](./media/manage-content/Screenshot_3.png)
+![](./media/manage-content/manage-content-items.png)
 
-On the right of each content item is a `list of actions` allowed to the current user for that content item. In the picture above these actions are highlighted with a solid red line. The allowed actions a user can perform on a content item depend on the permissions granted by the roles assigned to the user. This is described in detail in the chapter [Users and Roles](../Users-and-Roles). Users who have been assigned the `admin` role have full permissions on all content and can therefore perform all available actions. The possible actions you can see to the right of the content items are:  
+
+On the right of each content item is a `list of actions` allowed to the current user for that content item. In the image above these actions are highlighted with a solid red line. The allowed actions a user can perform on a content item depend on the permissions granted by the roles assigned to the user. This is described in detail in the chapter [Users and Roles](../Users-and-Roles). Users who have been assigned the `admin` role have full permissions on all content and can therefore perform all available actions. The available actions are shown to the right of the content items:  
 
 - `View` –  View a published version of the content item. The published version of the content is what users see.  
-- `Preview` – Preview an draft version of the content item. The draft version of the content item is a version that is usually in preparation or being edited, but is still being worked on and is not ready for publication. This version is not available to users.  
-- `Publish` – Publication of the draft version of the content item, so that it becomes the published version.  
-- `Publish Draft` –  If this link is present it means that the content has a draft and a published version. It publishes the draft, turning it into the published version.  
-- `Unpublish` – It turns the published version into a draft version.    
+- `Preview` – Preview a draft version of the content item. The draft version of the content item is a version that is usually in preparation or editing, but is still being worked on and is not ready for publication. It is not available to users.  
+- `Publish` – Publish the draft version of the content item so that it becomes the published version.  
+- `Publish Draft` –  If this link is present it means that the content item has a draft and a published version. It publishes the draft, turning it into the published version.  
+- `Unpublish` – Turns the published version into a draft version.    
 - `Clone` – Creates a copy of the content item. The current user becomes the owner of the new content item.  
 - `Edit` – Opens a page where the content item can be edited.  
-- `Delete` – Delete the content item.  
+- `Delete` – Deletes the content item.  
 
 !!!tip "Note"
-    If the `View` link is displayed along with the `Preview` link, you will also see the `Publish Draft` link. This means that the content item has a published version and a draft version that is newer than the published version. The draft in this case is the `latest version`. If you click on `Publish Draft` link, then the draft will be published and will become available to the users. Further explanations can be found further down in this section.  
+    If the `View` link is displayed along with the `Preview` link, you will also see the `Publish Draft` link. This means that the content item has a published version and a draft version that is newer than the published version. In this case, the draft is the `latest version`. When you click the `Publish Draft` link, the draft is published and becomes available to users. Further explanations can be found later in this section.  
 
-There are two ways to create new content item. By using the `Create New Content` option in the top right corner of the `Manage Content` view and by cloning an existing content item using the `Clone` action. You can also import content items, but this topic is covered in the [Import and Export](../import-and-export) chapter. The following image illustrates the content management flow.  
+There are two ways to create new content item. By using the `Create New Content` option in the top right hand corner of the `Manage Content` view and by cloning an existing content item using the `Clone` action. You can also import content items, but this topic is covered in the [Import and Export](../import-and-export) chapter. The following flowchart illustrates the content management process.  
 
 ![](./media/manage-content/manage-content.png)
 
-!!! attention "Attention:"  
-     When a content item is published, the `Edit` option is not available to **users**. If a user needs to edit a published content item, it must first be converted to a draft using  `Unpublish` action. The user will then be able to edit the content item. **Administrators** are able to `Edit`, `Save` and `Publish` content without having to `Unpublish` it first. This is represented in the image above by the `Save Published` element. Each `Save Published` action creates a new version of the content item.  
+!!! attention "Attention"  
+     When a content item is published, the `Edit` option is not available to **users**. If a user needs to edit a published content item, it must first be converted to a draft using the `Unpublish` action. The user will then be able to edit the content item. **Administrators** are able to `Edit`, `Save` and `Publish` content without having to `Unpublish` it first. This is represented in the image above by the `Save Published` element. Each `Save Published` action creates a new version of the content item.  
 
-`Content Items` to which the user has no access will not have any actions displayed. If a short description can be seen, but there are no available actions, this means that the author of the `Content Item` does not have a published version, just a draft. When the draft is published, the user will be able to view the page and clone it. When a page is cloned, the user will receive a copy, which he is the author of. The user can then edit this copy and publish it under his own name.
-
+No actions will be displayed for `Content Items` that the user does not have access to. If a short description can be seen but no actions are available, this means that the author of the `Content Item` does not have a published version, only a draft. This is illustrated in the next image. When the draft is published, the user will be able to view and clone the page. When the page is cloned, the user gets a copy of the page of which he is the author. The user can then edit this copy and publish it under his own name.  
  
-![](./media/manage-content/Screenshot_4.png)
+![](./media/manage-content/manage-content-items2.png)
 
-In the case where only the `View` action is available, the content author has a published version of the page, but has started editing a new draft, which is not published yet. In this case, the user can only view the last published version. When the author publishes the draft, the user will be able to clone the latest version.
+In the case where only the `View` action is available, the content author has a published version of the page, but has started editing a new draft, which is not published yet. In this case, the user can only view the last published version. When the author publishes the draft, the user will be able to clone the latest version.  
 
 ![](./media/manage-content/Screenshot_5.png)
 
