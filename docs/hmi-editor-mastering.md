@@ -855,12 +855,12 @@ Component configuration view:
 
 | Name              | Descriptor                                                       |
 |-------------------|------------------------------------------------------------------|
-| Item Substitution | Component name (unique inside the shape scope).                            |
+| Item Substitution | Component name (unique inside the shape scope).                  |
 | Click             | The function that will be called when they shape is clicked on.  |
 | Height            | The height of the Selection Box.                                 |
 | Width             | The width of the Selection Box.                                  |
-| Style             | CSS properties used for styling.                              |
-| Class             | CSS classes used for styling.                      |
+| Style             | CSS properties used for styling.                                 |
+| Class             | CSS classes used for styling.                                    |
 | Do Not Use ObjectStore           | If the checkbox is set to **true** (checked), the shape will try to gather data <br> from the source provided in the `ItemName` field instead of the data in the <br> `ObjectStore`. This is usually done when the server of the data source is <br> different than the server of the provider, in which case visualizing trends <br> will not be possible. This option provides a convenient solution to this <br> problem.                  |
   
 <br> 
