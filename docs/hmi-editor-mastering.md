@@ -1,10 +1,18 @@
 #
-**SmartWEB** offers a built-in WEB-based graphics editor (`SVG Editor`) for creating and editing **Scalable Vector Graphics** (`SVG`) that are used to build `HMI` (Human Machine Interface) and other types of web pages. The pages are then animated using data that is usually provided by the  
-`Opc Xml Data Providers`. This feature enables users to design and view `HMI` similar to that used in operator stations in the control room. This chapter will explain how to create and manage graphical displays to achieve a dynamic visual representation of the process. This includes the use of dynamic elements (`Shapes`) from SmartWEB's `Shape Library`, which are used to represent general `HMI` elements such as `Valves`, `Motors`, `Regulators`, etc. The following picture is an example of a data-driven `WEB-HMI` graphic page.
 
-![](./media/hmi-editor-mastering/image0.png)
+**SmartWEB** includes a built-in, web-based graphics editor (`SVG Editor`) for creating and editing Scalable Vector Graphics (`SVG`). These graphics are essential for building Human Machine Interface (`HMI`) pages as well as other types of web pages. The pages created can be animated using data provided by **SmartWEB** `Data Providers`. This feature allows users to design and view `HMI` pages similar to those used in operator stations within control rooms. 
 
-The graphical editor is also used for the development of individual `shapes`. **SmartWEB** provides a library of pre-built shapes that are ready for use. Additionally, new **custom** shapes can be created to meet specific project requirements and extend the built-in library. The [Dynamic Shapes Development](../dynamic-shapes-development) chapter describes how to create **custom** shapes.
+This chapter will guide you through the process of creating and managing graphical displays to achieve a dynamic visual representation of your process. You will learn how to: 
+
+> -  Working with the editor tools to create static `SVG` graphics.  
+
+> -  Use dynamic elements (`Shapes`) from **SmartWEB** shape library to render basic `HMI` elements such as `Valves`, `Motors`, `Regulators`, etc.  
+
+Below is an example of a data-driven **SmartWEB** `HMI` graphic page.
+
+![](./media/hmi-editor-mastering/smartweb-hmi-front-end.png)
+
+The graphical editor is also used for the development of individual `shapes`. **SmartWEB** provides a library of pre-built shapes that are ready for use. Additionally, users can create **custom** shapes to meet specific project requirements and extend the built-in library. The [Dynamic Shapes Development](../dynamic-shapes-development) chapter details how to create **custom** shapes.
 
 ---
 
@@ -30,31 +38,31 @@ The following image is an example of `HMI` content loaded inside the editor in t
 
 #### Menu Edit
 
-- The `SVG-Edit` button in the top left corner of the editor displays a drop-down menu with several options.
+The `SVG-Edit` button in the top left corner of the editor displays a drop-down menu with several options.
 
 ![](./media/hmi-editor-mastering/svgEditMenu.png)
 
-- `New Image` - Create a new document.
+> -  `New Image` - Create a new document.
 
-- `Import Display` - Upload an `SVG` document (display) to the canvas area.
+> -  `Import Display` - Upload an `SVG` document (display) to the canvas area.
 
-- `Export Display`- Download the current `SVG` document **with** the `Opc Xml Data Providers`.
+> -  `Export Display`- Download the current `SVG` document **with** the `Opc Xml Data Providers`.
 
-- `Export Display (portable)`- Download the current `SVG` document **without** the  
+> -  `Export Display (portable)`- Download the current `SVG` document **without** the  
 `Opc Xml Data Providers`.
 
-- `Shape Library` - Access the library of available shapes. The shapes are organized in folders according to their purpose. The following example shows a few of the default analog shapes included in **SmartWEB**.
+> -  `Shape Library` - Access the library of available shapes. The shapes are organized in folders according to their purpose. The following example shows a few of the default analog shapes included in **SmartWEB**.
 
 ![](./media/hmi-editor-mastering/image4.png)
 
-- `Import Image` - Import a standard `SVG` image to the canvas area. 
+> -  `Import Image` - Import a standard `SVG` image to the canvas area. 
 
-- `Document Properties` - By default, the new display inherits the canvas dimensions from its  
+> -  `Document Properties` - By default, the new display inherits the canvas dimensions from its  
 `Content Type` configuration. This option allows the user to change the width and height of the drawing area.
 
 ![](./media/hmi-editor-mastering/image5.png)
 
-- `Fast Publish` - Executes `Unpublish` and `Publish Now` commands sequentially for the current `Content Item`. This functionality provides a convenient way to publish an edited/updated  
+> -  `Fast Publish` - Executes `Unpublish` and `Publish Now` commands sequentially for the current `Content Item`. This functionality provides a convenient way to publish an edited/updated  
 `Content Item` with one operation. The chapter [Manage Content](../manage-content) provides a complete explanation of content publishing and content versioning.
 
 !!!warning "Important"
@@ -407,6 +415,8 @@ Example of a `properties` panel on the web page:
 The context menu can be triggered by a left or right mouse click. This option is configurable from the `Trigger` setting, as shown in the image below:
 
 ![](./media/hmi-editor-mastering/contextMenuTrigger.png)
+
+---
 
 #### Base Components
 
@@ -1083,6 +1093,7 @@ Front-end example of the **Embedded Trend** component:
 ![](./media/hmi-editor-mastering/embTrendComponentFrontEnd.png) 
 
 ---
+
 ## Display Configuration
 
 This tool is used to edit the global display configuration. Every zone that contains an `Svg Editor` has its own configuration that is responsible for the `shapes` in the respective area.

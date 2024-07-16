@@ -14,9 +14,11 @@ On the left-hand side of the page, below the New dropdown list, all the `Content
 
 ![](./media/manage-content/content-types.png)
 
-Below the available content types, there is a `Content` link, as shown in the previous image. Clicking this link takes you to the `Manage Content` page, as shown in the next screenshot. This page allows you to view, search, create, and edit content. All available content items (pages) can be accessed here.
+Below the available content types, there is a `Content` link, as shown in the previous image. Clicking this link navigates to the `Manage Content` page, as shown in the next screenshot. 
 
-Now, let's detail the information fields provided for each content item in the `Manage Content` view. For clarity, the fields are numbered in the next image, followed by their descriptions:    
+![](./media/manage-content/manage-content-items.png)
+
+This page allows the users to view, search, create, and edit content. All available content items (pages) can be accessed here. Now, let's detail the information fields provided for each content item in the `Manage Content` view. For clarity, the fields are numbered on the image and their description is below:    
 
 `(1)` - Title of the content item.  
 `(2)` - Content type from which the content item is derived. More detailed descriptions of these relationships can be found in the [Content Anatomy](../content-anatomy) chapter.  
@@ -25,8 +27,6 @@ Now, let's detail the information fields provided for each content item in the `
 `(5)` - Timestamp indicating the last modification of the content item.  
 `(6)` - User who last modified the content item.  
 `(7)` - Owner of the content item, which is the user who initially created it.  
-
-![](./media/manage-content/manage-content-items.png)
 
 On the right of each content item is a `list of actions` allowed to the current user for that content item. In the image above these actions are highlighted with a solid red line. The allowed actions a user can perform on a content item depend on the permissions granted by the roles assigned to the user. This is described in detail in the chapter [Users and Roles](../Users-and-Roles). Users who have been assigned the `admin` role have full permissions on all content and can therefore perform all available actions. The available actions are displayed to the right of the content items:  
 
