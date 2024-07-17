@@ -128,7 +128,7 @@ The following table shows two more queries using the same words (**"oil"** and *
 Search can be performed on all fields and parts of content items that are included in the indexing. If a specific field needs to be targeted, use the field name followed by a colon, e.g., `title:"oil pump"`. Logical operators such as `AND`, `OR`, and `NOT` can also be used. More information about the capabilities of the Apache Lucene query syntax can be found [here](https://lucene.apache.org/core/2_9_4/queryparsersyntax.html). The [Site Settings](../site-settings) chapter explains how to configure `fields` and `parts` of content types to be indexed and included in the search functionality.  
 
 !!! attention "Using Lucene query:"  
-      To use the Apache Lucene query syntax in the search, the `Do Not Escape Query` option must be checked in the [Site Settings, under the Search section](../site-settings#search).
+      To use the Apache Lucene query syntax in the search, the `Do Not Escape Query` option must be active. This option is located in the [Site Settings, under the Search section](../site-settings#search).
 
 ---
 
