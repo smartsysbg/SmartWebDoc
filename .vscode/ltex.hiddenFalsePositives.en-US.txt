@@ -1,0 +1,2 @@
+{"rule":"NON_ENGLISH_CHARACTER_IN_A_WORD","sentence":"^\\QОn the right-hand side, there is a \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q button for adding a new role.\\E$"}
+{"rule":"NON_ENGLISH_CHARACTER_IN_A_WORD","sentence":"^\\QОn the right-hand side of role management page, there is a \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q button for adding a new role.\\E$"}
