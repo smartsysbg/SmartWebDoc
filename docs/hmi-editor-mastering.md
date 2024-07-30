@@ -517,6 +517,7 @@ Component configuration view:
 | Class             | CSS classes used for styling.                                                                                                                |
 
 <br>
+
 Style and class configuration has the following syntax:
 ```javascript
 [{ style: "cursor", value: "pointer" }]

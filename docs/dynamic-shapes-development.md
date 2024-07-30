@@ -483,5 +483,6 @@ The alarm frame of the shape is created with the help of another modular functio
 
 ---
 
-In this chapter we went through the process of creating an example shape in **SmartWEB**, the common and recommended practices, shape structure and configuration.  
+#### Summary
 
+In this chapter we have discussed in detail how to create `HMI` shapes in **SmartWEB** using the built-in SVG editor and `JavaScript` code that animates the graphical elements based on data supplied by `Data Providers`. Shapes created in this way become part of the system's shape libraries and can be reused for building `HMI` displays. For more information see [HMI Editor Mastering](../hmi-editor-mastering) chapter, which describes how to work with the built-in graphical editor. Another valuable resource is the chapter [HMIWeb to SVG](../hmiweb-to-svg), which explains how to automatically convert `DCS` operator graphics to **SmartWEB** graphics pages.
