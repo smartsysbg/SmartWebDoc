@@ -1,11 +1,11 @@
 #
 
 Shapes are graphical components designed to visualize data, elements of
-the control system, and more. In essence, they can be divided into two categories: static and dynamic. Static shapes do not display data and will not be the focus of this chapter. They are used as an indication of an item that is part of the system but is not required to be monitored. Dynamic shapes are the primary source of information on a display. They represent data and important events such as alarms and more. Simple `svg` elements and *AngularJS* directives are the basic building blocks that determine the composition, configuration and functionality of the shape. The functionality can then be customized even further through the use of *JavaScript*. Each shape can be used multiple times in a display to visualize different data.
+the control system, and more. They can essentially be divided into two categories: static and dynamic. Static shapes do not display data and are not the focus of this chapter. They are used to indicate an element that is part of the process, but there is no dynamic data for monitoring and animation. Dynamic shapes are the primary source of information on a display. They represent data and important events such as alarms and more. Simple `svg` elements and *AngularJS* directives are the basic building blocks that determine the composition, configuration and functionality of the shape. The functionality can then be further customized using *JavaScript*. Each shape can be used multiple times in a display to visualize different data sources.  
 
-##Introduction
+## Introduction
 
-The shape creation process begins in the `Media Library`, which can be accessed through the `Media` menu item in the admin `Dashboard`.
+The shape creation process begins in the `Media Library`, which can be accessed via the `Media` link in the admin `Dashboard`.  
 
 ![](media/dynamic-shapes-development/1.png)
 

@@ -84,4 +84,4 @@ Content types initially lack fields for capturing information such as pictures, 
 ---
 
 #### Summary  
-In this chapter, we have learned about the basic building blocks of the content. To fully understand the whole process of designing and creating front-end webpages, read the chapters [Manage Content](../manage-content) and [Widgets](../widgets). The [Navigation and Menus](../navigation-and-menus) chapter explains how to create site navigation and improve user experience.  
+In this chapter, we have learned about the basic building blocks of the content. To fully understand the whole process of designing and creating front-end webpages, read the chapters [Manage Content](../manage-content), [Custom Content in-depth](../custom-content-in-depth) and [Widgets](../widgets). The [Navigation and Menus](../navigation-and-menus) chapter explains how to create site navigation and improve user experience.  
