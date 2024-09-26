@@ -5,7 +5,6 @@ The [Architectural Considerations](../architectural-considerations) chapter desc
 ---
 
 ## Overview
-
 The following figure illustrates the multitenancy architecture.  
 
 ![](./media/multitenancy/multitenancy-architecture.png)
@@ -23,7 +22,6 @@ We recommend using the first option, because the database in this case is better
 ---
 
 ## Database Preparation
-
 To illustrate multitenancy configuration, we will use a `PostgreSQL` server and configure two tenants. We need to create a separate database for each tenant and we also need to create one database for the `Default Tenant`. The only thing we need to do is create three empty databases and three users who are owners of the databases or have permissions to create and delete tables. This is shown in the next screenshot.  
 
 ![](./media/multitenancy/pg-databases-and-users.png)
@@ -58,7 +56,6 @@ After modifying the configuration files, the `PostgreSQL` server must be restart
 ---
 
 ## Creating a Default Tenant  
-
 Once we have prepared the databases for the each tenant, we can move on to configuring the tenants themselves. We will do this on the server where the **SmartWEB** application is installed. We will not cover the installation of the **SmartWEB** application in this chapter as this is covered in the [Getting Started](../getting-started) chapter. In order for **SmartWEB** to initialise and connect to the newly created database, we will go into the **SmartWEB** installation directory, navigate to the `App_Data` folder, and delete the `Sites` folder from there. Now we will create the `Default Tenant` which will be used to create and manage the other tenants. You can browse to `http://localhost` and you will see the following screen.  
 
 ![](./media/multitenancy/default-tenant-initial-setup.png)
@@ -86,7 +83,6 @@ Now that we have successfully cooked the recipe, we can move on to creating `App
 ---
 
 ## Creating Application Tenants
-
 First you need to check if the `Multi Tenancy` module is enabled. You can do this by navigating through the `Modules` link in the `Admin Panel`. All **SmartWE**B modules and their current status are displayed here. Type `Multi Tenancy` in the filter box and you will see a view as shown in the following image.  
 
 ![](./media/multitenancy/modules-management-page.png)
@@ -115,7 +111,6 @@ If you go to the `App_Data>Sites>` folder, you will see that a new folder has be
 You will need to answer a few questions similar to those you answered when creating the `Default Tenant` and then complete the tenant creation by clicking the `Finish Setup` button. Once you have successfully cooked the recipe of your choice, you will now have your first `Application Tenant`. You can access the new tenant by adding the `URL` prefix you configured as an additional segment to the `URL` of your `Default Tenant`. A new folder will also be created in the `inetpub>SmartWEB>Media>` folder with the name of the tenant you have created. This will contain the media files available to the tenant. You can now continue to create content, roles and users in your `Application Tenant`. You can create as many tenants as you like in the same way.  There is no limit to the number of tenants that the **SmartWEB** platform can serve. The limitation comes from the performance of the server platform, which depends on the number of concurrent users served by the tenants.
 
 ## Tenant Management
-
 As mentioned above, the default tenant is used to manage tenants. The `Tenant Management` page displays a list of all tenants. Actions that can be performed on the tenant are listed on the right, as shown in the following image. 
 
 ![](./media/multitenancy/tenants-management-page-3.png)
@@ -131,5 +126,4 @@ To delete a tenant, you must do the following:
 ---
 
 #### Summary
-
 In this chapter we learned how to configure **SmartWEB** to run in `Multitenancy Mode`. The different modes of operation are discussed in the [Architectural Considerations](../architectural-considerations) chapter. The [Load Balancing](../load-balancing) chapter describes the configuration and management when the system is working with `Load Balancer` at the front. The two modes of operation `Multitency` and `Load Balancing` complement each other and optimize the server resources used and at the same time provide a good level of redundancy.  

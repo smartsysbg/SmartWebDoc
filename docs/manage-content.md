@@ -5,7 +5,6 @@ This chapter covers the admin interface related to content management in **Smart
 ---
 
 ## Content Management
-
 Navigate to the `Dashboard` via the user options in the top-right of the page.  
 
 ![](./media/manage-content/user-dashboard.png)
@@ -106,7 +105,6 @@ On the right side of each version, the possible actions are displayed.  All unpu
 ---
 
 ## Searching
-
 The system provides functionality for indexing and keyword searching within the content. To access the search page, navigate to the admin panel, select `Content` link, and then choose the `Search Tab`, as shown in the next image.  
 
 ![](./media/manage-content/manage-content-search.png)
@@ -132,8 +130,7 @@ Search can be performed on all fields and parts of content items that are includ
 
 ---
 
-##Recycle Bin
-
+## Recycle Bin
 The `Recycle Bin` is a feature that displays items marked for deletion. When a content item is deleted using the `Delete` action, it is not immediately destroyed. Instead, it is moved to the `Recycle Bin`, where it can be viewed and restored later. To access the `Recycle Bin`, go to the admin panel, select the `Content` link, and then choose the `Recycle Bin Tab`, as shown in the next image.
 
 ![](./media/manage-content/manage-content-recycle-bin.png)
@@ -148,5 +145,4 @@ At the top, there is a filter that allows content items to be filtered by Conten
 ---
 
 #### Summary 
-
 In this chapter, we have covered the most important aspects of content management in **SmartWEB**. To fully grasp the anatomy of content and the principles of its management, we recommend reading the [Content Anatomy](../content-anatomy) chapter if you haven't already done so. Once you have absorbed the information from these two chapters, you can further enrich your knowledge by reading the [Custom Content in-depth](../custom-content-in-depth) and [Widgets](../widgets) chapters.  

@@ -7,7 +7,6 @@ This chapter describes how to create WEB pages with **SmartWEB** built-in functi
 ---
 
 ## Query Builder in Content Types
-
 Query Builder, in the context of the `Content Types` configuration, gives an option for pre-configuration of all query properties discussed later in this chapter. Values that are configured here will be inherited as default settings by newly created `Content Items`.
 
 ![](./media/odata-query-builder/image1.png)
@@ -19,7 +18,6 @@ Query Builder, in the context of the `Content Types` configuration, gives an opt
 ---
 
 ## Query Builder in Content Items
-
 Query builder, in the context of `Content Items`, is available, when creating or editing a content item from a content Type, where the `Query Builder part` is present.
 
 The following image presents the look of the `Content Item` configuration.
@@ -55,7 +53,6 @@ provides an intuitive interface for building relatively complex where clauses.
 ---
 
 ## OData Query Stepwise
-
 After you configuring the endpoint and entity fields, the next step is to build a conditional `Where Clause` to filter out the results. The where clause can be combined with `AND`, `OR` and `NOT` logic operators, as well as with parentheses to control the execution priority. To add a new row to the condition, click `(+)` as shown in the image below, and then select a logic operator from the first drop-down selector.
 
 ![](./media/odata-query-builder/image4.png)
@@ -134,7 +131,6 @@ The **`Search`** button is for testing purposes of the query from the back-end. 
 ---
 
 ## OData Query Archetype
-
 Now let’s take a look at an example.
 
 !!!tip "The Mission"  
@@ -150,5 +146,4 @@ The following image shows `OData` query configuration that complies with the tas
 ---
 
 #### Summary
-
 In this chapter, we have learned how to configure the `OData Query Builder` in the contexts of `Content Types` and `Content Items`. To gain a complete understanding of the entire process of setting up endpoints and rendering the results to the front-end, read the chapters [Access to Relational Data](../access-to-relational-data) and [OData Table](../odata-table). The [Content Anatomy](../content-anatomy/#content-item) chapter contains a more detailed view of `Content Item` and `Content Type` concepts.

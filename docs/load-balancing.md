@@ -5,7 +5,6 @@ To help you learn the material covered in this chapter, it is a good idea to rea
 ---
 
 ## Overview
-
 The following diagram illustrates how the two `Multitenancy` and `Load Balancing` modes work together.
   
 ![](./media/load-balancing/load-balancing-and-multitenancy.png)
@@ -26,7 +25,6 @@ To illustrate the configuration and operation of `Load Balancing` mode, we will 
 ---
 
 ## Database Preparation
-
  We need to create a separate database for each tenant and we also need to create one database for the `Default Tenant`.  Databases and database users are configured in the same way as described in the [Multitenancy](../multitenancy/#database-preparation) chapter. You can use the information in this chapter to create your databases and users.  
 
  Also, using a text editor, open the `pg_hba.conf` file in the `data` directory of the `PostgreSQL` server. Add a configuration line for each application server you want to connect to the database, replacing `A.B.C.D` with the `IP address` of the server.  
@@ -38,7 +36,6 @@ host	all				all				A.B.C.D/32			scram-sha-256
 ---
 
 ## Redis Cache Preparation
-
 We will not describe how to install the `Redis Cache` server here. This information can be found on the official `Redis Cache` website. We assume that the `Redis Cache` server is installed. Now we need to check the server configuration file to see if it is allowed to connect to the server from other machines, and we also need to check which `TCP` port the server is listening on for client connections. Go to the installation directory of the `Redis Cache` server and open the file `redis.windows-service.conf`. Look for the following parameters:  
 
 ```
@@ -59,13 +56,11 @@ port 6379
 ---
 
 ## Application Servers Preparation
-
 Once we have prepared the necessary databases and installed and configured the `Redis Cache` server, we can proceed to configure the **SmartWEB** application servers. In this chapter we will not describe how to install a **SmartWEB** server. This is done in the [Getting Started](../getting-started) chapter. Here we assume that you have installed **SmartWEB** on both machines, i.e. that you have installed and configured `IIS` on them, and that you can browse and login to `http://localhost` locally from both servers.   
 
 ---
 
 #### IIS Setup
-
 When preparing application servers to participate in the load balancing scheme, you will need to make some additional settings on the `IIS server`. Start the `IIS Server Manager` and open the `Advanced Settings` of the **SmartWEB** application pool. Configure `Start Mode = AlwaysRunning` and `Idle Timeout (minutes) = 0` parameters as shown in the following figure.  
 
 ![](./media/load-balancing/application-pool-settings.png)
@@ -91,7 +86,6 @@ Copy these keys and place them on all the application servers. The other two opt
 ---
 
 #### Default Tenant Instalation
-
 The initial installation of **SmartWEB** on the application servers may have been done using a local database or another database. It is also possible that the installation was done with an inappropriate recipe. In order to make sure that the sites are running with the correct database and that the correct recipe has been used during the installation, we are going to perform an initial initialisation. To do this we need to stop the **SmartWEB** application pool on both servers and delete the contents of the `inetpub>SmartWeb>App_Data>Sites>` folder on both application servers.  
 
 Before proceeding with the initialisation of **SmartWEB**, we also need to configure `Redis Cache` client to connect to the `Redis Cache` server we prepared in the previous section. To do this, go to the `inetpub>SmartWeb>Modules>Smartsys.Redis>` folder and open the `redis.config` file with a text editor. Configure all lines as follows, replacing `A.B.C.D` with the actual `Redis Cache` server address. Do this for all application servers.  
@@ -130,7 +124,6 @@ To test your environment run application pools and **SmartWEB** sites on all app
 ---
 
 #### Application Tenants Instalation
-
 Once you have managed to run `Default Tenant` on all application servers, you can start creating the application tenants. To do this, browse to `http://localhost/Admin/MultiTenancy` on any of the the application servers and create a new tenant using the `Add a Tenant` button. Follow the steps described in the [Multitenancy](../multitenancy/#creating-application-tenants) chapter to create a new application tenant.  
 
 !!!note "Tenant Management Module" 
@@ -169,7 +162,6 @@ Once we configure `Load Balancer` and browse through it, we can do such inspecti
 ---
 
 ## Load Balancer Configuration
-
 As mentioned in the [Overview](#overview) section, we will use an `MS IIS` server as a `Load Balancer`, installed on the same machine as the `PostgreSQL` and `Redis Cache` servers. 
 
 !!!tip "Selecting Load Balancer" 
@@ -204,5 +196,4 @@ The application server that served your requests is now `Offline`. Reload the br
 ---
 
 #### Summary
-
 In this chapter we have discussed in detail the configuration of **SmartWEB** in `Load Balancing` mode. If you have followed all the steps described here, you have now an environment that runs in both `Multitenancy` and `Load Balancing` modes. To configure an environment to run in `Multitenancy` mode only, refer to the [Multitenancy](../multitenancy) chapter. The [Architectural Considerations](../architectural-considerations) chapter briefly describes all modes of operation, along with their pros and cons.  

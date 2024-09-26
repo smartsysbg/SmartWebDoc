@@ -17,7 +17,6 @@ The graphical editor is also used for the development of individual `shapes`. **
 ---
 
 ## Editor Features
-
 The `Smartsys Svg Editor` module provides a graphical editor. The module brings a new  
 `Content Field` to the fieldset that can be attached to every `Content Type`. The following image shows the configuration of a `Content Type` with an embedded `Svg Field`. Visit the  
 [Content Anatomy](../content-anatomy) chapter for additional information on `Content Types`, `Content Parts`,  
@@ -37,7 +36,6 @@ The following image is an example of `HMI` content loaded inside the editor in t
 ---
 
 #### Menu Edit
-
 The `SVG-Edit` button in the top left corner of the editor displays a drop-down menu with several options.
 
 ![](./media/hmi-editor-mastering/svgEditMenu.png)
@@ -74,7 +72,6 @@ The `SVG-Edit` button in the top left corner of the editor displays a drop-down 
 ---
 
 #### Basic Tools
-
 ![](./media/hmi-editor-mastering/image6.png)
 
 `(1)` - **Selection Tool** - Allows the user to select and move items in the editor. The user has the ability to select multiple items by holding `Shift` and left-clicking on the items.
@@ -178,13 +175,11 @@ When a static element is selected that **is** a `path`, the `Reorient Path` opti
 ---
 
 #### Shape Library
-
 The `SVG Editor` contains dynamic base components (directives), which are used as the **basic building blocks** for rendering dynamic information. These base components can work independently, but can also be grouped into one element (`Shape`), which utilizes their separate functionalities. By consolidating the base components, different shapes can be built that vary in features and complexity. The [Dynamic Shapes Development](../dynamic-shapes-development) chapter explains the development process of such custom `shapes`.
 
 ---
 
 ## Shape Configuration
-
 This section covers all the details you need to know about configuring and customizing existing `shapes` in your dynamic pages. The `Item Configuration` tool in the editor provides the user with the ability to change the configuration of the `shapes`. This tool is accessed via the cogwheel icon on the toolbar, and becomes available after an element is selected.
 
 ![](./media/hmi-editor-mastering/image15.png)
@@ -198,7 +193,6 @@ The configuration options are spread into three separate tabs in the configurati
 ---
 
 #### Properties
-
 ![](./media/hmi-editor-mastering/image16.png)
 
 The `Properties` tab contains the data sources for the parameters of the `shape`. In **SmartWEB** these sources are known as `points`. A `point` is a data structure comprised of parameters of specific data types. Every `shape` uses an `Opc Xml Da Data Provider` to request and receive data. Available providers can be selected from the `DataProviderKey` field. For more information - see chapters [Access to OPC data](../access-to-opc-data) and [Content Anatomy](../content-anatomy). 
@@ -219,7 +213,6 @@ The `Browse` button, to the right of the `ItemName` field, opens an `Opc Xml Da 
 ---
 
 #### Directives
-
 ![](./media/hmi-editor-mastering/image17.png)
 
 The `Directives` tab allows the user to assign specific directives to the `shape`. The directives are added to the elements as `HTML` attributes, and used to extend the functionality of standard `HTML`. The `AngularJS` framework processes these attributes.
@@ -419,7 +412,6 @@ The context menu can be triggered by a left or right mouse click. This option is
 ---
 
 #### Base Components
-
 Every `Shape` is a group of standard `svg` elements (line, polyline, rectangle, circle, etc.)  
 and `base components`. Currently, in **SmartWEB**, there are two separate libraries. One for  
 older `base components` and one for newer versions that support theming (EPKS release 500 and up) and may provide additional functionality.
@@ -1096,13 +1088,11 @@ Front-end example of the **Embedded Trend** component:
 ---
 
 ## Display Configuration
-
 This tool is used to edit the global display configuration. Every zone that contains an `Svg Editor` has its own configuration that is responsible for the `shapes` in the respective area.
 
 ---
 
 #### General
-
 General tab view:
 ![](./media/hmi-editor-mastering/image56.png)
 
@@ -1121,7 +1111,6 @@ General tab view:
 ---
 
 #### Behaviour
-
 General tab view:
 ![](./media/hmi-editor-mastering/image57.png)
 
@@ -1132,7 +1121,6 @@ General tab view:
 ---
 
 ## Display Diagnostic
-
 The `Diagnostic` tool is used for analysis and diagnostics of standard errors that may occur when working with the editor. For each error or warning that is found, there is a corresponding row in the panel, which provides the results of the analysis. One or more rows can be present for each shape, as there can be more than one error in different parts of the shape, as well as more than one parameters.
 
 For each error found, a `ShapeId` button is added (unique identifier for the shape in the
@@ -1149,7 +1137,6 @@ The analysis of each display can be started via the `Diagnostic` button, and pre
 ---
 
 #### Opc Da
-
 The `Opc Da` section analyzes errors that would occur when the display is started on the client side(invalid parameters or points). These errors are analyzed according to the `Opc Xml Da` specification. Some errors can occur as a result of the absence of the parameter / the point from `POS` (Persistent Object
 Store). Another reason may be that the server to which points are directed is unavailable etc. Some of these errors can be easily analyzed and handled via the `Repair` button, when this is not possible, information is displayed in the dialog box, allowing the user to decide on whether and how the errors should be handled.
 
@@ -1170,7 +1157,6 @@ the user will be able to see some of the following messages:
 ---
 
 #### Context Menu
-
 The `Context Menu` section analyzes context menu related errors. The context menu is programmatically tested for errors that would be returned during a normal operation on the client side (with the current configuration of the shape).
 The analysis checks if the context menu can be opened, and if
 all of its options are available. If an option is not
@@ -1187,7 +1173,6 @@ The possible errors are described below:
 ---
 
 #### MiniTrend
- 
 The `Mini Trend` section analyzes errors related to a mini trend, which is an option in the context menu. The system checks if the parameters exist in their respective servers, as well as the availability of any historical data for the parameters. Each parameter is checked for available historical data in the `STH` (Short
 Term History Server) and `LTH` (Long Term History Server). `ItemName's` that will be read are taken from the `POS` (Persistent Object Store).
 
@@ -1204,7 +1189,6 @@ The possible errors are described below:
 ---
 
 #### Navigation
-
 The `Navigation` section analyzes errors related to the navigations of the
 display. The validity of all navigations is checked, as well as if the resource they lead to is available. The path to each new display can be written in 2 ways:
 
@@ -1225,7 +1209,6 @@ The possible errors are described below:
 ---
 
 ## Data Presentation
-
 This section will go over the structure of the data flow in **SmartWEB**, which allows data to be taken from the server and visualized in the browser. The following image is an example of a dynamic web page that was created with the use of the `SVG Editor`.
 
 ![](./media/hmi-editor-mastering/image12.1.png)
@@ -1253,5 +1236,4 @@ The `Statistics Controller` takes care of communication statistics. Tracks respo
 ---
 
 #### Summary
-
 In this chapter, we have learned about the use of the **HMI EDITOR** and its essential components. It is a vital tool for display building, and provides a variety of built-in options and components that provide convenient functionality.

@@ -4,7 +4,6 @@ Shapes are graphical components designed to visualize data, elements of
 the control system, and more. They can essentially be divided into two categories: static and dynamic. Static shapes do not display data and are not the focus of this chapter. They are used to indicate an element that is part of the process, but there is no dynamic data for monitoring and animation. Dynamic shapes are the primary source of information on a display. They represent data and important events such as alarms and more. Simple `svg` elements and *AngularJS* directives are the basic building blocks that determine the composition, configuration and functionality of the shape. The functionality can then be further customized using *JavaScript*. Each shape can be used multiple times in a display to visualize different data sources.  
 
 ## Introduction
-
 The shape creation process begins in the `Media Library`, which can be accessed via the `Media` link in the admin `Dashboard`.  
 
 ![](media/dynamic-shapes-development/1.png)
@@ -45,7 +44,6 @@ The shape creation process begins by selecting a directory (`6`) in which the ne
 The next step in the creation of a shape is to construct its graphical (or visual) part and provide a configuration that will determine the features it will include and the data it will represent. This process is explained in detail in the next section.
 
 ## Graphical part
-
 The graphical (visual) aspect of the shape is what the user sees when data is being presented on the page. This part of the shape also contains a configuration, which allows the user to implement different features and determines the point data that will be presented on the page. The process of building the graphical part is done in the [`SVG Editor`](../hmi-editor-mastering).
 
 The graphical part of the shape is comprised of basic `svg` elements and custom  directives that are provided by **SmartWEB**. The directives can be split into two separate categories. The first category of directives will be referred to as `Base Components`. These are pre-built components with specific behaviour. They are intended to be used as building blocks in the construction of the shape, as they provide specific functionality and can be used multiple times in a single shape. Example of such `Base Components` are the `Alphanumeric`,  
@@ -59,7 +57,6 @@ Basic `svg` elements that are intended to have dynamic behaviour are assigned th
 Different shapes are built for different purposes. They represent different data and have different behaviours. The type of the shape is determined by the data that it has to represent. In this section we will go through the process of creating a shape with the help of an example. 
 
 #### Creating an example shape: Scada Data Acquisition
-
 We will first need to create a shape file, as shown in the introduction section of this chapter, and open the file in the `SVG Editor`.
 
 The first shape element we will create for this example is the "RecFrame" `base element`, which will act as the background for our shape. To do this, we will use the `Rectangle` option in the toolbar on the left, marked as `(1)` in the image below.
@@ -450,7 +447,6 @@ epksCustomFunctions.Analog_OnUpdate = function () {
 ![](./media/dynamic-shapes-development/17.png)
 
 #### Example shape script: Scada Data Acquisition
-
 As a final example for this chapter, we will create the custom function for our example data acquisition shape. This is a production-grade shape used at a professional level. Most of the functionality in this case is handled by the built-in code of the `base components`. Formatting the value and providing an alarm frame for the shape is the only additional behaviour required.
 
 ```
@@ -484,5 +480,4 @@ The alarm frame of the shape is created with the help of another modular functio
 ---
 
 #### Summary
-
 In this chapter we have discussed in detail how to create `HMI` shapes in **SmartWEB** using the built-in SVG editor and `JavaScript` code that animates the graphical elements based on data supplied by `Data Providers`. Shapes created in this way become part of the system's shape libraries and can be reused for building `HMI` displays. For more information see [HMI Editor Mastering](../hmi-editor-mastering) chapter, which describes how to work with the built-in graphical editor. Another valuable resource is the chapter [HMIWeb to SVG](../hmiweb-to-svg), which explains how to automatically convert `DCS` operator graphics to **SmartWEB** graphics pages.
