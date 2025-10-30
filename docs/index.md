@@ -7,7 +7,7 @@ interoperability with any installed based control system, SmartWEB acts as a sin
 
 ![](./media/index/smartweb-philosophy.png)
 
-SmartWEB and all its services are designed to operate with security as  core consideration. Along with the flexible architecture, the system enables enterprises for Industry 4.0 and digital transformation.  
+**SmartWEB** and all its services are designed to operate with security as  core consideration. Along with the flexible architecture, the system enables enterprises for Industry 4.0 and digital transformation.  
 
 ---
 
